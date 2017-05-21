@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Stripe
 
 class ViewController2: UIViewController {
 
