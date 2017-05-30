@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>162528503459-h30r7jdlhhv3l47t6msleipga3oh4m8q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.162528503459-h30r7jdlhhv3l47t6msleipga3oh4m8q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCEcNCHvCHXc_F6G_Le-Q1qFQNHbDXDLlM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>162528503459</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.skyblue.SkyPay</string>
+	<key>PROJECT_ID</key>
+	<string>skypay-a4c21</string>
+	<key>STORAGE_BUCKET</key>
+	<string>skypay-a4c21.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:162528503459:ios:7d74133076e9df33</string>
+	<key>DATABASE_URL</key>
+	<string>https://skypay-a4c21.firebaseio.com</string>
+</dict>
+</plist>
