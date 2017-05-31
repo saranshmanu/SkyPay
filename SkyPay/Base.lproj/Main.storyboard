@@ -149,6 +149,7 @@
                         <outlet property="backgroundView" destination="Y9r-Hl-Z27" id="UJZ-hN-ZPO"/>
                         <outlet property="bottomConstraint" destination="gjJ-Rq-w5h" id="mnt-iJ-I1i"/>
                         <outlet property="loginButton" destination="fDY-3v-oiu" id="tkj-4Q-0sb"/>
+                        <outlet property="logoImage" destination="spT-H1-b6K" id="ntX-kL-0zy"/>
                         <outlet property="passwordTextField" destination="gEJ-Gh-XaS" id="XTF-h5-9ij"/>
                         <outlet property="titleLogoLabel" destination="k5f-9C-YMk" id="59K-Tc-Iww"/>
                         <outlet property="topConstraint" destination="EqX-no-c97" id="SOG-ym-mbH"/>

@@ -10,6 +10,15 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController,UITextFieldDelegate {
 
+    override func viewDidAppear(_ animated: Bool) {
+        self.view.layoutIfNeeded()
+        UIView.animate(withDuration: 1.0, animations: {
+            self.titleLogoLabel.alpha = 1.0
+            self.logoImage.alpha = 1.0
+        })
+    }
+    
+    @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var activityIndicator: UIView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -23,6 +32,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         activityIndicator.isHidden = true
         userNameTextField.delegate = self
         passwordTextField.delegate = self
+        
+        titleLogoLabel.alpha = 0.0
+        logoImage.alpha = 0.0
         
         if view.frame.height == 568{
             titleLogoLabel.font = titleLogoLabel.font.withSize(50)
@@ -65,14 +77,26 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         }
     }
     @IBAction func loginButtonAction(_ sender: Any) {
-        activityIndicator.isHidden = false
+        self.view.layoutIfNeeded()
+        loginButton.isEnabled = false
+        userNameTextField.isEnabled = false
+        passwordTextField.isEnabled = false
+        UIView.animate(withDuration: 0.5, animations: {
+            self.activityIndicator.isHidden = false
+        })
         FIRAuth.auth()?.signIn(withEmail: userNameTextField.text!, password: passwordTextField.text!) { (user, error) in
             if error == nil{
                 self.activityIndicator.isHidden = true
+                self.loginButton.isEnabled = true
+                self.userNameTextField.isEnabled = true
+                self.passwordTextField.isEnabled = true
                 print("Login Successfull")
             }
             else{
                 self.activityIndicator.isHidden = true
+                self.loginButton.isEnabled = true
+                self.userNameTextField.isEnabled = true
+                self.passwordTextField.isEnabled = true
                 print("Login Unsuccessfull")
             }
         }
