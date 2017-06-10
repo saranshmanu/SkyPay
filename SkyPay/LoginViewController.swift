@@ -6,6 +6,7 @@
 //  Copyright © 2017 Saransh Mittal. All rights reserved.
 //
 import UIKit
+import FirebaseDatabase
 import FirebaseAuth
 
 class LoginViewController: UIViewController,UITextFieldDelegate {
@@ -17,7 +18,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             self.logoImage.alpha = 1.0
         })
     }
-    
+
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var activityIndicator: UIView!
     @IBOutlet weak var loginButton: UIButton!
@@ -28,7 +29,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         activityIndicator.isHidden = true
         userNameTextField.delegate = self
         passwordTextField.delegate = self
@@ -56,24 +56,24 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         
         loginButton.layer.cornerRadius = loginButton.frame.height/2
         loginButton.tintColor = UIColor.clear
-        loginButton.backgroundColor = UIColor.white
+        loginButton.backgroundColor = UIColor.init(red: 0.0867, green: 0.3861, blue: 0.5000, alpha: 1.0)
 
         // for tapping
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard)))
         
-        UIView.animate(withDuration: 1, delay: 1, options:[UIViewAnimationOptions.allowUserInteraction,UIViewAnimationOptions.repeat,UIViewAnimationOptions.autoreverse], animations: {
-            self.backgroundView.backgroundColor = self.randomColor()
-            self.backgroundView.backgroundColor = self.randomColor()
+        UIView.animate(withDuration: 3, delay: 1, options:[UIViewAnimationOptions.allowUserInteraction,UIViewAnimationOptions.repeat,UIViewAnimationOptions.autoreverse], animations: {
+            self.loginButton.backgroundColor = self.randomColor()
         }, completion:nil )
         
     }
-    let counter = 1
+    var counter = 1
     func randomColor() -> UIColor {
+        counter += 1
         if counter % 2 == 0{
-            return UIColor.init(red: 0, green: 0, blue: 0, alpha: 1.0)
+            return UIColor.init(red: 0.2437, green: 0.7835, blue: 0.9527, alpha: 1.0)
         }
         else{
-            return UIColor.init(red: 60/255, green: 60/255, blue: 60/255, alpha: 1.0)
+            return UIColor.init(red: 0.0867, green: 0.3861, blue: 0.5000, alpha: 1.0)
         }
     }
     @IBAction func loginButtonAction(_ sender: Any) {
@@ -91,6 +91,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 self.userNameTextField.isEnabled = true
                 self.passwordTextField.isEnabled = true
                 print("Login Successfull")
+                //Go to the HomeViewController if the login is sucessful
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+                self.present(vc!, animated: true, completion: nil)
             }
             else{
                 self.activityIndicator.isHidden = true
@@ -98,6 +101,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 self.userNameTextField.isEnabled = true
                 self.passwordTextField.isEnabled = true
                 print("Login Unsuccessfull")
+                //to initiate alert if login is unsuccesfull
+                let alertController = UIAlertController(title: "Try Again", message: "Incorrect username or password", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
             }
         }
     }
