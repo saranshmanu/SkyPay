@@ -20,6 +20,8 @@ class ExchangeRateViewController: UIViewController, UITableViewDelegate, UITable
         let cell = ExchangeRateTableView.dequeueReusableCell(withIdentifier: "ExchangeRateTableView", for: indexPath as IndexPath) as! ExchangeRateTableViewCell
         cell.currencyNameLabel.text = exchangeRates[indexPath.row]["name"] as? String
         cell.exchangeRateLabel.text = String(describing: exchangeRates[indexPath.row]["rate"]!) + " " + String(describing: exchangeRates[indexPath.row]["code"]!)
+        cell.countryFlagImageView.image = UIImage.init(named: "us")
+        cell.countryFlagImageView.layer.cornerRadius = cell.countryFlagImageView.frame.height/2
         return cell
     }
     
@@ -36,6 +38,7 @@ class ExchangeRateViewController: UIViewController, UITableViewDelegate, UITable
         // Do any additional setup after loading the view.
         ExchangeRateTableView.delegate = self
         ExchangeRateTableView.dataSource = self
+        CountryFlagImageView.image = UIImage.init(named: "us")
         Alamofire.request(url).responseJSON{
             response in print(response.result.value!)
             if response.result.isSuccess{
