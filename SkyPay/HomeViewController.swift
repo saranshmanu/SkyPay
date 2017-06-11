@@ -13,11 +13,12 @@ import Firebase
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var qrCode: UIImageView!
     @IBOutlet weak var viewSample: UIView!
     @IBOutlet weak var viewB: UIView!
     
-    let code = "wnr8yn32985yn3498yntv983y4nt98y4n598tyne984"
+    let code = "Firebase"
     
 //    override func viewDidAppear(_ animated: Bool) {
 //        let databaseRef = FIRDatabase.database().reference()
@@ -63,6 +64,12 @@ class HomeViewController: UIViewController {
             self.displayQRCodeImage()
         }
         self.qrCode.alpha = 0.55
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
     
     var qrcodeImage: CIImage!

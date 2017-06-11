@@ -19,6 +19,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         })
     }
 
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var activityIndicator: UIView!
     @IBOutlet weak var loginButton: UIButton!
@@ -35,6 +36,19 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         
         titleLogoLabel.alpha = 0.0
         logoImage.alpha = 0.0
+        
+        //parallax effect in back image
+        let min = CGFloat(-20)
+        let max = CGFloat(20)
+        let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
+        xMotion.minimumRelativeValue = min
+        xMotion.maximumRelativeValue = max
+        let yMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.y", type: .tiltAlongVerticalAxis)
+        yMotion.minimumRelativeValue = min
+        yMotion.maximumRelativeValue = max
+        let motionEffectGroup = UIMotionEffectGroup()
+        motionEffectGroup.motionEffects = [xMotion,yMotion]
+        backgroundImage.addMotionEffect(motionEffectGroup)
         
         if view.frame.height == 568{
             titleLogoLabel.font = titleLogoLabel.font.withSize(50)

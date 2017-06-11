@@ -11,6 +11,8 @@ import Alamofire
 
 class ExchangeRateViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     let countries = ["USD", "EUR", "JPY", "GBP", "CHF", "CAD", "AUD", "INR"]
     @available(iOS 2.0, *)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,17 +25,16 @@ class ExchangeRateViewController: UIViewController, UITableViewDelegate, UITable
         cell.currencyNameLabel.text = exchangeRates[indexPath.row]["name"] as? String
         cell.exchangeRateLabel.text = String(describing: exchangeRates[indexPath.row]["rate"]!) + " " + String(describing: exchangeRates[indexPath.row]["code"]!)
         cell.countryFlagImageView.image = UIImage.init(named: String(describing: exchangeRates[indexPath.row]["code"]!))
-        cell.countryFlagImageView.layer.cornerRadius = cell.countryFlagImageView.frame.height/2
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        CountryFlagImageView.alpha = 0.0
         ExchangeRateTableView.deselectRow(at: indexPath as IndexPath, animated: true)
-        UIView.animate(withDuration: 1, animations: {
-            self.CountryFlagImageView.image = UIImage.init(named: String(describing: self.exchangeRates[indexPath.row]["code"]!))
-            self.CountryFlagImageView.alpha = 1.0
-        })
+//        CountryFlagImageView.alpha = 0.0
+//        UIView.animate(withDuration: 1, animations: {
+//            self.CountryFlagImageView.image = UIImage.init(named: String(describing: self.exchangeRates[indexPath.row]["code"]!))
+//            self.CountryFlagImageView.alpha = 1.0
+//        })
     }
     
     @IBOutlet weak var CountryFlagImageView: UIImageView!
@@ -44,10 +45,16 @@ class ExchangeRateViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
         // Do any additional setup after loading the view.
         ExchangeRateTableView.delegate = self
         ExchangeRateTableView.dataSource = self
-        CountryFlagImageView.image = UIImage.init(named: "INR")
+        //CountryFlagImageView.image = UIImage.init(named: "INR")
 //        Alamofire.request(url).responseJSON{
 //            response in print(response.result.value!)
 //            if response.result.isSuccess{
