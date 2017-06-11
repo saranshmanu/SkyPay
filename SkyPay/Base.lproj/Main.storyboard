@@ -11,11 +11,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+        </array>
         <array key="Didot.ttc">
             <string>Didot</string>
-        </array>
-        <array key="SF-UI-Display-Medium.otf">
-            <string>SFUIDisplay-Medium</string>
         </array>
         <array key="SF-UI-Display-Thin.otf">
             <string>SFUIDisplay-Thin</string>
@@ -78,7 +78,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="628-3l-J9I">
-                                        <rect key="frame" x="72" y="70" width="231" height="229.5"/>
+                                        <rect key="frame" x="72" y="70" width="231" height="230"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="What-is-Ethereum-300x300" translatesAutoresizingMaskIntoConstraints="NO" id="spT-H1-b6K">
                                                 <rect key="frame" x="70.5" y="0.0" width="90" height="120"/>
@@ -94,7 +94,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pay smart" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJV-Fj-tvd">
-                                                <rect key="frame" x="-72" y="209.5" width="0.0" height="20"/>
+                                                <rect key="frame" x="-72" y="209.5" width="0.0" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -105,14 +105,14 @@
                                         <rect key="frame" x="136" y="326" width="102" height="90"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="BBD-CF-uCa">
-                                                <rect key="frame" x="8" y="20.5" width="87" height="51"/>
+                                                <rect key="frame" x="13" y="19.5" width="77" height="51.5"/>
                                                 <subviews>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Or8-b7-mDu">
-                                                        <rect key="frame" x="33.5" y="0.0" width="20" height="20"/>
+                                                        <rect key="frame" x="28.5" y="0.0" width="20" height="20"/>
                                                         <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </activityIndicatorView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9S-Xs-keM">
-                                                        <rect key="frame" x="0.0" y="31" width="87" height="20"/>
+                                                        <rect key="frame" x="0.0" y="31" width="77" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -516,6 +516,7 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WDs-Na-jIz">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
@@ -530,7 +531,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="us" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-xy-z5F">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AUD" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-xy-z5F">
                                                     <rect key="frame" x="15" y="9" width="130" height="130"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="130" id="B7g-QT-RRI"/>
@@ -541,14 +542,14 @@
                                                     <rect key="frame" x="165" y="38" width="195" height="74"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTl-d5-We7">
-                                                            <rect key="frame" x="0.0" y="0.0" width="110.5" height="37"/>
-                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="119.5" height="37"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                             <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLF-Bc-ojb">
-                                                            <rect key="frame" x="0.0" y="37" width="150.5" height="37"/>
-                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="21"/>
+                                                            <rect key="frame" x="0.0" y="37" width="136.5" height="37"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="21"/>
                                                             <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -579,7 +580,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="R3s-kQ-Z8L" firstAttribute="leading" secondItem="Y6y-cG-uSy" secondAttribute="leading" id="3i3-Cv-3tc"/>
                             <constraint firstItem="8Ks-q4-HPw" firstAttribute="leading" secondItem="Y6y-cG-uSy" secondAttribute="leading" id="6Xm-NN-Snc"/>
@@ -710,12 +711,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AUD" width="600" height="300"/>
         <image name="Collapse Arrow-50" width="50" height="50"/>
         <image name="Delete-50" width="50" height="50"/>
         <image name="Expand Arrow-50" width="50" height="50"/>
         <image name="MTMxOTU2MjU3Nzk5MTE2MDUw" width="1080" height="1920"/>
         <image name="What-is-Ethereum-300x300" width="150" height="150"/>
         <image name="stp_shipping_form.png" width="117" height="120"/>
-        <image name="us" width="1160" height="611"/>
     </resources>
 </document>
