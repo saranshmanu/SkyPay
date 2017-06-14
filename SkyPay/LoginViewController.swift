@@ -38,8 +38,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         logoImage.alpha = 0.0
         
         //parallax effect in back image
-        let min = CGFloat(-20)
-        let max = CGFloat(20)
+        let min = CGFloat(-2)
+        let max = CGFloat(2)
         let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
         xMotion.minimumRelativeValue = min
         xMotion.maximumRelativeValue = max
