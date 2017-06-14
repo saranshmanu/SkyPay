@@ -9,8 +9,33 @@
 import UIKit
 import AVFoundation
 import FirebaseAuth
+import Firebase
 
+class MyParser: NSObject, XMLParserDelegate {
+    
+    var parser: XMLParser
+    var barcodes = [BarcodeData]()
+    init(xml: String) {
+        parser = XMLParser(data: xml.data(using: String.Encoding.utf8)!)
+        super.init()
+        parser.delegate = self
+    }
+    func parseXML() -> [BarcodeData] {
+        parser.parse()
+        return barcodes
+    }
+}
 class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate, XMLParserDelegate {
+    @IBOutlet weak var tick: UIImageView!
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+        let currentElement = elementName;
+        print(currentElement)
+        aadharDict = attributeDict
+        userCred = attributeDict
+        aadharDict["email"] = emailTextField.text
+        print(aadharDict)
+        FIRDatabase.database().reference().child("Users/" + aadharDict["uid"]!).childByAutoId().setValue(aadharDict)
+    }
     
     // for tapping
     func dismissKeyboard() {
@@ -20,27 +45,47 @@ class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate
     }
     
     @IBAction func continueAction(_ sender: Any) {
-        if passwordTextField.text == confirmPassTextField.text{
-            FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-                if error == nil{
-                    let alertController = UIAlertController(title: "Welcome Aboard!", message: "Successfull Authentication", preferredStyle: .alert)
-                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                    alertController.addAction(defaultAction)
-                    self.present(alertController, animated: true, completion: nil)
-                    //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginPageViewController")
-                    self.present(vc!, animated: true, completion: nil)
+        if scanButton.isHidden == false{
+            let alertController = UIAlertController(title: "Please scan your National Identity", message: "", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
+        continueButton.isEnabled = false
+        if emailTextField.text != "" && passwordTextField.text != "" && confirmPassTextField.text != ""{
+            if passwordTextField.text == confirmPassTextField.text{
+                FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+                    if error == nil{
+                        self.continueButton.isEnabled = true
+                        //Go to the HomeViewController if the login is sucessful
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginPageViewController")
+                        self.present(vc!, animated: true, completion: nil)
+                        let alertController = UIAlertController(title: "Welcome Aboard!", message: "Successfull Authentication", preferredStyle: .alert)
+                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        alertController.addAction(defaultAction)
+                        self.present(alertController, animated: true, completion: nil)
+                    }
+                    else{
+                        self.continueButton.isEnabled = true
+                        let alertController = UIAlertController(title: "Error", message: "Please try again after some time!", preferredStyle: .alert)
+                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        alertController.addAction(defaultAction)
+                        self.present(alertController, animated: true, completion: nil)
+                    }
                 }
-                else{
-                    let alertController = UIAlertController(title: "Error", message: "Please try again after some time!", preferredStyle: .alert)
-                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                    alertController.addAction(defaultAction)
-                    self.present(alertController, animated: true, completion: nil)
-                }
+            }
+            else{
+                self.continueButton.isEnabled = true
+                let alertController = UIAlertController(title: "Error", message: "Password does not match !", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
             }
         }
         else{
-            let alertController = UIAlertController(title: "Error", message: "Password does not match !", preferredStyle: .alert)
+            self.continueButton.isEnabled = true
+            let alertController = UIAlertController(title: "Fields Empty", message: "Please enter authentication details to continue", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
@@ -52,7 +97,15 @@ class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBAction func scan(_ sender: Any) {
-        scanAdhaar()
+        if emailTextField.text != "" && passwordTextField.text != "" && confirmPassTextField.text != ""{
+            scanAdhaar()
+        }
+        else{
+            let alertController = UIAlertController(title: "Fields Empty", message: "Please enter authentication details to continue", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     override func viewDidAppear(_ animated: Bool) {
         emailTextField.layer.cornerRadius = emailTextField.frame.height/2
@@ -74,6 +127,7 @@ class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate
         // Do any additional setup after loading the view.
         // for tapping
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.dismissKeyboard)))
+        tick.alpha = 0.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,6 +143,10 @@ class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate
     // MARK: - QRCodeReader Delegate Methods
     
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
+        scanButton.isHidden = true
+        UIView.animate(withDuration: 0.5, animations: {
+            self.tick.alpha = 1.0
+        })
         reader.stopScanning()
         dismiss(animated: true, completion: nil)
     }

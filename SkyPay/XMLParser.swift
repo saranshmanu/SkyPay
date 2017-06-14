@@ -67,31 +67,3 @@ class BarcodeData {
         
     }
 }
-
-class MyParser: NSObject {
-    var parser: XMLParser
-    var barcodes = [BarcodeData]()
-    init(xml: String) {
-        parser = XMLParser(data: xml.data(using: String.Encoding.utf8)!)
-        super.init()
-        parser.delegate = self
-    }
-    func parseXML() -> [BarcodeData] {
-        parser.parse()
-        return barcodes
-    }
-}
-
-extension MyParser: XMLParserDelegate {
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        let currentElement = elementName;
-        print(currentElement)
-        aadharDict = attributeDict
-        userCred = attributeDict
-//        aadharDict["email"] = email.text
-//        aadharDict["phone"] = phone.text
-        print(aadharDict)
-        FIRDatabase.database().reference().child("Users/" + aadharDict["uid"]!).childByAutoId().setValue(aadharDict)
-        
-    }
-}

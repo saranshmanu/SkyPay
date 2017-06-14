@@ -307,6 +307,7 @@
                         <outlet property="emailTextField" destination="vgb-ag-YdI" id="gA7-vd-HmQ"/>
                         <outlet property="passwordTextField" destination="OYV-y3-FJP" id="zax-h1-3Jr"/>
                         <outlet property="scanButton" destination="gG9-Da-eud" id="k7D-s5-eE6"/>
+                        <outlet property="tick" destination="hVe-vY-INf" id="EW5-ZD-JNX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoE-Dg-FuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
