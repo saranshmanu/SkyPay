@@ -25,7 +25,7 @@
         <!--Login View Controller-->
         <scene sceneID="6bT-q5-wxY">
             <objects>
-                <viewController storyboardIdentifier="loginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BEG-9g-9ge" customClass="LoginViewController" customModule="SkyPay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BEG-9g-9ge" customClass="LoginViewController" customModule="SkyPay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Nt-dx-Ugu"/>
                         <viewControllerLayoutGuide type="bottom" id="EmH-OA-Sbv"/>
@@ -78,7 +78,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="628-3l-J9I">
-                                        <rect key="frame" x="72" y="70" width="231" height="230"/>
+                                        <rect key="frame" x="72" y="70" width="231" height="229.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="What-is-Ethereum-300x300" translatesAutoresizingMaskIntoConstraints="NO" id="spT-H1-b6K">
                                                 <rect key="frame" x="70.5" y="0.0" width="90" height="120"/>
@@ -94,25 +94,28 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pay smart" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJV-Fj-tvd">
-                                                <rect key="frame" x="-72" y="209.5" width="0.0" height="20.5"/>
+                                                <rect key="frame" x="-72" y="209.5" width="0.0" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="k5f-9C-YMk" firstAttribute="top" secondItem="spT-H1-b6K" secondAttribute="bottom" id="e4n-br-aKr"/>
+                                        </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9Y-Ud-jcP">
                                         <rect key="frame" x="136" y="326" width="102" height="90"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="BBD-CF-uCa">
-                                                <rect key="frame" x="13" y="20" width="77" height="51.5"/>
+                                                <rect key="frame" x="8" y="20.5" width="87" height="51"/>
                                                 <subviews>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Or8-b7-mDu">
-                                                        <rect key="frame" x="28.5" y="0.0" width="20" height="20"/>
+                                                        <rect key="frame" x="33.5" y="0.0" width="20" height="20"/>
                                                         <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </activityIndicatorView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9S-Xs-keM">
-                                                        <rect key="frame" x="0.0" y="31" width="77" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="31" width="87" height="20"/>
                                                         <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -195,67 +198,116 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG9-Da-eud">
-                                <rect key="frame" x="164" y="376" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scan"/>
-                                <connections>
-                                    <action selector="scan:" destination="1qZ-JL-YkF" eventType="touchUpInside" id="GqQ-8d-BNT"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="6V9-Ba-q5z">
-                                <rect key="frame" x="55" y="162" width="270" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PjD-aR-Jpu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dr-sK-fyn">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="27.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGi-bX-8hd">
+                                        <rect key="frame" x="76" y="626" width="246.5" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Already have an account - " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V8-HH-PaA">
+                                                <rect key="frame" x="0.0" y="0.0" width="203.5" height="32"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
+                                                <color key="textColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC6-VJ-ugY">
+                                                <rect key="frame" x="203.5" y="0.0" width="43" height="32"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" red="0.39972174167633057" green="0.60248416662216187" blue="0.32161173224449158" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="BEG-9g-9ge" kind="showDetail" id="Fbx-ZV-cxM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG9-Da-eud">
+                                        <rect key="frame" x="89" y="286" width="200" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="16"/>
+                                        <state key="normal" title="Scan your National Identity">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scan:" destination="1qZ-JL-YkF" eventType="touchUpInside" id="GqQ-8d-BNT"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="confirm password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9B-pX-QK0">
+                                        <rect key="frame" x="52" y="226" width="270" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9B-pX-QK0">
-                                        <rect key="frame" x="0.0" y="36.5" width="270" height="27"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-ag-YdI">
+                                        <rect key="frame" x="52" y="135" width="270" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2H6-t5-shS">
-                                        <rect key="frame" x="0.0" y="72.5" width="270" height="27.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYV-y3-FJP">
+                                        <rect key="frame" x="52" y="180" width="270" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES"/>
                                     </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="9zC-MU-LOm"/>
-                                    <constraint firstItem="I9B-pX-QK0" firstAttribute="height" secondItem="4dr-sK-fyn" secondAttribute="height" id="qIt-9U-59m"/>
-                                    <constraint firstItem="2H6-t5-shS" firstAttribute="height" secondItem="I9B-pX-QK0" secondAttribute="height" id="s9U-LB-gjh"/>
-                                    <constraint firstAttribute="width" constant="270" id="zBg-Im-IYb"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyj-LD-6c2">
-                                <rect key="frame" x="114" y="453" width="146" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Continue"/>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGi-bX-8hd">
-                                <rect key="frame" x="55" y="638" width="242.5" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Already have an account - " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V8-HH-PaA">
-                                        <rect key="frame" x="0.0" y="0.0" width="204.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="hVe-vY-INf">
+                                        <rect key="frame" x="125" y="376" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Sign Up to access your Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xek-BD-kJf">
+                                        <rect key="frame" x="42" y="69" width="294" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC6-VJ-ugY">
-                                        <rect key="frame" x="204.5" y="0.0" width="38" height="30"/>
-                                        <state key="normal" title="Login"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Welcome Aboard !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zha-fI-3Bt">
+                                        <rect key="frame" x="62" y="22" width="250" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyj-LD-6c2">
+                                        <rect key="frame" x="123" y="550" width="129" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="30"/>
+                                        <state key="normal" title="Continue">
+                                            <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="continueAction:" destination="1qZ-JL-YkF" eventType="touchUpInside" id="IvP-x5-t40"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PjD-aR-Jpu" firstAttribute="top" secondItem="eQ8-VC-drs" secondAttribute="top" id="Xqg-wS-Mhj"/>
+                            <constraint firstItem="PjD-aR-Jpu" firstAttribute="leading" secondItem="eQ8-VC-drs" secondAttribute="leading" id="sG8-lz-lH7"/>
+                            <constraint firstItem="jng-kM-IGZ" firstAttribute="top" secondItem="PjD-aR-Jpu" secondAttribute="bottom" id="uAY-8B-1Ok"/>
+                            <constraint firstAttribute="trailing" secondItem="PjD-aR-Jpu" secondAttribute="trailing" id="y2n-5h-nhj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPassTextField" destination="I9B-pX-QK0" id="2YX-tW-bFQ"/>
+                        <outlet property="continueButton" destination="Vyj-LD-6c2" id="1P3-hh-1cw"/>
+                        <outlet property="emailTextField" destination="vgb-ag-YdI" id="gA7-vd-HmQ"/>
+                        <outlet property="passwordTextField" destination="OYV-y3-FJP" id="zax-h1-3Jr"/>
+                        <outlet property="scanButton" destination="gG9-Da-eud" id="k7D-s5-eE6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoE-Dg-FuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -621,7 +673,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLF-Bc-ojb">
-                                                            <rect key="frame" x="0.0" y="32" width="136.5" height="32"/>
+                                                            <rect key="frame" x="0.0" y="32" width="150.5" height="32"/>
                                                             <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="21"/>
                                                             <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <nil key="highlightedColor"/>
@@ -1006,6 +1058,7 @@
         <image name="What-is-Ethereum-300x300" width="150" height="150"/>
         <image name="menu" width="22" height="22"/>
         <image name="stp_shipping_form.png" width="117" height="120"/>
+        <image name="unnamed" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rTz-yL-O08"/>

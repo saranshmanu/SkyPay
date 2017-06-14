@@ -38,8 +38,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         logoImage.alpha = 0.0
         
         //parallax effect in back image
-        let min = CGFloat(-2)
-        let max = CGFloat(2)
+        let min = CGFloat(-0)
+        let max = CGFloat(0)
         let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
         xMotion.minimumRelativeValue = min
         xMotion.maximumRelativeValue = max
@@ -59,13 +59,13 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         userNameTextField.layer.cornerRadius = userNameTextField.frame.height/2
         userNameTextField.attributedPlaceholder = NSAttributedString(string: userNameTextField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         userNameTextField.backgroundColor = UIColor.clear
-        userNameTextField.layer.borderWidth = 1.2
+        userNameTextField.layer.borderWidth = 0.5
         userNameTextField.layer.borderColor = UIColor(white: 1.0, alpha: 1.0).cgColor
         
         passwordTextField.layer.cornerRadius = passwordTextField.frame.height/2
         passwordTextField.attributedPlaceholder = NSAttributedString(string: passwordTextField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         passwordTextField.backgroundColor = UIColor.clear
-        passwordTextField.layer.borderWidth = 1.2
+        passwordTextField.layer.borderWidth = 0.5
         passwordTextField.layer.borderColor = UIColor(white: 1.0, alpha: 1.0).cgColor
         
         loginButton.layer.cornerRadius = loginButton.frame.height/2

@@ -8,16 +8,72 @@
 
 import UIKit
 import AVFoundation
+import FirebaseAuth
 
 class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate, XMLParserDelegate {
-
-    @IBOutlet weak var scannerPreview: UIView!
+    
+    // for tapping
+    func dismissKeyboard() {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        confirmPassTextField.resignFirstResponder()
+    }
+    
+    @IBAction func continueAction(_ sender: Any) {
+        if passwordTextField.text == confirmPassTextField.text{
+            FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+                if error == nil{
+                    let alertController = UIAlertController(title: "Welcome Aboard!", message: "Successfull Authentication", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    //Go to the HomeViewController if the login is sucessful
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginPageViewController")
+                    self.present(vc!, animated: true, completion: nil)
+                }
+                else{
+                    let alertController = UIAlertController(title: "Error", message: "Please try again after some time!", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
+        else{
+            let alertController = UIAlertController(title: "Error", message: "Password does not match !", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var scanButton: UIButton!
+    @IBOutlet weak var confirmPassTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBAction func scan(_ sender: Any) {
         scanAdhaar()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        emailTextField.layer.cornerRadius = emailTextField.frame.height/2
+        emailTextField.attributedPlaceholder = NSAttributedString(string: emailTextField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.black])
+        emailTextField.layer.borderWidth = 0.5
+        emailTextField.layer.borderColor = UIColor.black.cgColor
+        passwordTextField.layer.cornerRadius = passwordTextField.frame.height/2
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: passwordTextField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.black])
+        passwordTextField.layer.borderWidth = 0.5
+        passwordTextField.layer.borderColor = UIColor.black.cgColor
+        confirmPassTextField.layer.cornerRadius = confirmPassTextField.frame.height/2
+        confirmPassTextField.attributedPlaceholder = NSAttributedString(string: confirmPassTextField.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.black])
+        confirmPassTextField.layer.borderWidth = 0.5
+        confirmPassTextField.layer.borderColor = UIColor.black.cgColor
+        scanButton.layer.cornerRadius = scanButton.frame.height/2
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // for tapping
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.dismissKeyboard)))
     }
 
     override func didReceiveMemoryWarning() {
