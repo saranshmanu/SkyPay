@@ -17,33 +17,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var qrCode: UIImageView!
     @IBOutlet weak var viewSample: UIView!
     @IBOutlet weak var viewB: UIView!
-    
-    let code = "Firebase"
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        let databaseRef = FIRDatabase.database().reference()
-//        databaseRef.child("Posts").queryOrderedByKey().observe(., with: {snap in
-//            self.posts.removeAll()
-//            databaseRef.child("Posts").queryOrderedByKey().observe(.childAdded, with: {
-//                snapshot in
-//                let snapshotValue = snapshot.value as? NSDictionary
-//                let title = snapshotValue?["title"] as! String
-//                let message = snapshotValue?["message"] as! String
-//                self.posts.insert(postStruct(title:title,message:message), at: 0)
-//                self.tableview.reloadData()
-//                
-//            })
-//            self.tableview.reloadData()
-//        })
-//    }
-    func post(){
-        let title = "Title"
-        let message = "message"
-        let post:[String:AnyObject]=["title": title as AnyObject,"message": message as AnyObject]
-        let databaseRef=FIRDatabase.database().reference()
-        databaseRef.child("Posts").childByAutoId().setValue(post)
-    }
-    
+    var code = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         viewSample.alpha = 0.0

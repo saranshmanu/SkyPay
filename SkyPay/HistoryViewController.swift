@@ -1,14 +1,14 @@
 //
-//  PaymentViewController.swift
+//  HistoryViewController.swift
 //  SkyPay
 //
-//  Created by Saransh Mittal on 12/06/17.
+//  Created by Saransh Mittal on 15/06/17.
 //  Copyright © 2017 Saransh Mittal. All rights reserved.
 //
 
 import UIKit
 
-class PaymentViewController: UIViewController {
+class HistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
