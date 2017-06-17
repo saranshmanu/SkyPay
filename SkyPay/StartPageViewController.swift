@@ -36,7 +36,7 @@ class StartPageViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func createTransaction(_ sender: Any) {
     }
-    var code = "bitcoin:" + "mvVsU2vhw9HNzpCCCV6ojhpU7CFFc1277z" + "?amount=0"
+    var code = "mvVsU2vhw9HNzpCCCV6ojhpU7CFFc1277z"
     
     @available(iOS 2.0, *)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

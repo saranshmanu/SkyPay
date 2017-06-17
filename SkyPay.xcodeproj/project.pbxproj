@@ -41,6 +41,7 @@
 		959755B41EF54628003E1F26 /* TransactionHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */; };
 		959755B61EF553DA003E1F26 /* sendBitcoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */; };
 		95B4D7831EC3738D00CB0F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B4D7821EC3738D00CB0F6F /* Assets.xcassets */; };
+		95BB05821EF5B78A00223C88 /* RippleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB05811EF5B78A00223C88 /* RippleEffect.swift */; };
 		95C909E61EF2E2940060D830 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C909E51EF2E2940060D830 /* WalletViewController.swift */; };
 		95C909EA1EF2E61F0060D830 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C909E91EF2E61F0060D830 /* HomePageViewController.swift */; };
 		95E5EE0C1ECB94F70036A2CA /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E5EE0B1ECB94F70036A2CA /* ViewController2.swift */; };
@@ -85,6 +86,7 @@
 		959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendBitcoinViewController.swift; sourceTree = "<group>"; };
 		95B4D7821EC3738D00CB0F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95BB05811EF5B78A00223C88 /* RippleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
 		95C909E51EF2E2940060D830 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		95C909E91EF2E61F0060D830 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		95E5EE0B1ECB94F70036A2CA /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */,
 				959755B11EF502BF003E1F26 /* Constants.swift */,
 				959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */,
+				95BB05811EF5B78A00223C88 /* RippleEffect.swift */,
 			);
 			path = SkyPay;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				958072651EEDA8DA002F7AAC /* SWRevealViewController.m in Sources */,
 				95029C711EF0FFE600044079 /* ReaderOverlayView.swift in Sources */,
 				954B46731EC3600600DDC7FA /* AppDelegate.swift in Sources */,
+				95BB05821EF5B78A00223C88 /* RippleEffect.swift in Sources */,
 				95029C741EF0FFE600044079 /* QRCodeReader.swift in Sources */,
 				95E5EE0C1ECB94F70036A2CA /* ViewController2.swift in Sources */,
 			);
