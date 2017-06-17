@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "static_qr_code_without_logo.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icons8-Long Arrow Up_50.png",
       "scale" : "2x"
     },
     {
