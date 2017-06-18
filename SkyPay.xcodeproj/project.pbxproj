@@ -44,6 +44,7 @@
 		95BB05821EF5B78A00223C88 /* RippleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB05811EF5B78A00223C88 /* RippleEffect.swift */; };
 		95C909E61EF2E2940060D830 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C909E51EF2E2940060D830 /* WalletViewController.swift */; };
 		95C909EA1EF2E61F0060D830 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C909E91EF2E61F0060D830 /* HomePageViewController.swift */; };
+		95D23A2C1EF6F2DF00F256F2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */; };
 		95E5EE0C1ECB94F70036A2CA /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E5EE0B1ECB94F70036A2CA /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		95BB05811EF5B78A00223C88 /* RippleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
 		95C909E51EF2E2940060D830 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		95C909E91EF2E61F0060D830 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		95E5EE0B1ECB94F70036A2CA /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		BA06760B3901502A1CA72006 /* Pods_SkyPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF71008EC60809AB3177F88A /* Pods-SkyPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyPay/Pods-SkyPay.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				959755B11EF502BF003E1F26 /* Constants.swift */,
 				959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */,
 				95BB05811EF5B78A00223C88 /* RippleEffect.swift */,
+				95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */,
 			);
 			path = SkyPay;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				95029C7F1EF1000400044079 /* XMLParser.swift in Sources */,
 				954B467B1EC3600600DDC7FA /* SkyPay.xcdatamodeld in Sources */,
 				953451601EF4793500C17C59 /* StartPageViewController.swift in Sources */,
+				95D23A2C1EF6F2DF00F256F2 /* ProfileViewController.swift in Sources */,
 				954B46751EC3600600DDC7FA /* ViewController.swift in Sources */,
 				952B2C8E1EDB2E7F001C8D50 /* HomeViewController.swift in Sources */,
 				95029C751EF0FFE600044079 /* QRCodeReaderResult.swift in Sources */,

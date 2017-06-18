@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Firebase
 
 var aadharDict = [String:String]()
 var userCred = [String:String]()
