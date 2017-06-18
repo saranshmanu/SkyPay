@@ -44,7 +44,6 @@ class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate
         let currentElement = elementName;
         print(currentElement)
         aadharDict = attributeDict
-        userCred = attributeDict
         aadharDict["email"] = emailTextField.text
         print(aadharDict)
         FIRDatabase.database().reference().child("Users/" + aadharDict["uid"]!).childByAutoId().setValue(aadharDict)
