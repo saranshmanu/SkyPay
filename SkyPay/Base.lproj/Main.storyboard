@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1qZ-JL-YkF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rMb-WE-AOK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -858,7 +858,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="address" destination="mQd-zB-FgJ" id="yOR-dU-iha"/>
+                        <outlet property="PaymentAddress" destination="mQd-zB-FgJ" id="k53-g0-qmh"/>
                         <outlet property="amount" destination="Vt2-cn-IfL" id="IVS-RT-t5K"/>
                         <outlet property="backgroundView" destination="ldA-Lw-cZY" id="d6j-tD-mt3"/>
                         <outlet property="checkMark" destination="hCv-wi-kKT" id="8nv-mD-jbI"/>

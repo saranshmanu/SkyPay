@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import WVCheckMark
+import Alamofire
 
 class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
@@ -17,7 +18,7 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
     @IBOutlet weak var paymentStatus: UILabel!
     @IBOutlet weak var mapImageView: UIImageView!
     @IBOutlet var backgroundView: UIView!
-    @IBOutlet weak var address: UITextField!
+    @IBOutlet weak var PaymentAddress: UITextField!
     @IBOutlet weak var amount: UITextField!
     @IBOutlet weak var payButton: UIButton!
     @IBOutlet weak var loader: UIVisualEffectView!
@@ -101,7 +102,7 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
     
     // for tapping
     func dismissKeyboard() {
-        address.resignFirstResponder()
+        PaymentAddress.resignFirstResponder()
         amount.resignFirstResponder()
     }
     
@@ -155,8 +156,8 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
         var navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         // Do any additional setup after loading the view.
-        address.layer.cornerRadius = 10//address.frame.height/2
-        address.attributedPlaceholder = NSAttributedString(string: address.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
+        PaymentAddress.layer.cornerRadius = 10//address.frame.height/2
+        PaymentAddress.attributedPlaceholder = NSAttributedString(string: PaymentAddress.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         amount.layer.cornerRadius = 10//amount.frame.height/2
         amount.attributedPlaceholder = NSAttributedString(string: amount.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         payButton.layer.cornerRadius = payButton.frame.height/2
@@ -189,7 +190,7 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
                 reader.completionBlock = { (result: QRCodeReaderResult?) in
                     if let result = result {
                         print("Completion with result: \(result.value) of type \(result.metadataType)")
-                        self.address.text = result.value
+                        self.PaymentAddress.text = result.value
                     }
                 }
                 present(reader, animated: true, completion: nil)
