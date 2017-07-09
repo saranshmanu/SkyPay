@@ -14,12 +14,13 @@ The validated block of transactions is then timestamped and added to a chain in 
 
 <hr>
 
-SkyPay will be a secured decentralised banking payment solution that would allow totally anonymous transactions to initiate by adoption of blockchain network which will provide highly secured peer to peer mesh network using sufficiently large number of nodes. We will be using Swift 4 for developing the application with BlockCypher API and Firebase SDK to establish backend servers.
+SkyPay will be a secured decentralised banking payment solution that would allow totally anonymous transactions to initiate by adoption of blockchain etherium test network providing highly secured peer to peer mesh network using sufficiently large number of nodes. We used Swift 4 for developing the application with BlockCypher API and Firebase SDK to establish backend servers.
 
-<<<<<<< HEAD
+<hr>
+
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2017 Saransh Mittal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -38,5 +39,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-=======
->>>>>>> a2f80a70d72f62bb355e864611595c8fb5ac08c8
