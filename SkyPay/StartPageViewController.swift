@@ -36,7 +36,6 @@ class StartPageViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func createTransaction(_ sender: Any) {
     }
-    var code = "mvVsU2vhw9HNzpCCCV6ojhpU7CFFc1277z"
     
     @available(iOS 2.0, *)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,6 +65,9 @@ class StartPageViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        cardholderNameLabel.text = name
+        balanceLabel.text = String(describing: balance)
+        var code = String(describing: address["address"])
         card.alpha = 0.0
         var navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]

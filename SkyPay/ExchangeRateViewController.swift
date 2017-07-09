@@ -65,7 +65,7 @@ class ExchangeRateViewController: UIViewController, UITableViewDelegate, UITable
 //        }
         for i in 0...countries.count-1{
             Alamofire.request(url + countries[i]).responseJSON{
-                response in print(response.result.value!)
+                response in //print(response.result.value!)
                 if response.result.isSuccess{
                     self.exchangeRates.append(response.result.value! as! NSDictionary)
                     self.ExchangeRateTableView.reloadData()

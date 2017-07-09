@@ -25,19 +25,7 @@ class MyParser: NSObject, XMLParserDelegate {
         return barcodes
     }
 }
-class SegueFromLeft: UIStoryboardSegue{
-    override func perform(){
-        let src = self.source
-        let dst = self.destination
-        src.view.superview?.insertSubview(dst.view, aboveSubview: src.view)
-        dst.view.transform = CGAffineTransform(translationX: src.view.frame.size.width, y: 0)
-        UIView.animate(withDuration: 0.25,delay: 0.0,options: UIViewAnimationOptions.curveEaseInOut,animations: {
-            dst.view.transform = CGAffineTransform(translationX: 0, y: 0)
-        },completion: { finished in
-            src.present(dst, animated: false, completion: nil)
-        })
-    }
-}
+
 class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate, XMLParserDelegate {
     @IBOutlet weak var tick: UIImageView!
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
@@ -57,13 +45,6 @@ class SignUpViewController: UIViewController, QRCodeReaderViewControllerDelegate
     }
     
     @IBAction func continueAction(_ sender: Any) {
-        if scanButton.isHidden == false{
-            let alertController = UIAlertController(title: "Please scan your National Identity", message: "", preferredStyle: .alert)
-            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(defaultAction)
-            self.present(alertController, animated: true, completion: nil)
-            return
-        }
         continueButton.isEnabled = false
         if emailTextField.text != "" && passwordTextField.text != "" && confirmPassTextField.text != ""{
             if passwordTextField.text == confirmPassTextField.text{

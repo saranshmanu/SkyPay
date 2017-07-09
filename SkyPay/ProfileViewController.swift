@@ -7,25 +7,45 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController {
     
+    @IBAction func logoutAction(_ sender: Any) {
+        if FIRAuth.auth()?.currentUser != nil {
+            do {
+                try FIRAuth.auth()?.signOut()
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginPageViewController")
+                present(vc, animated: true, completion: nil)
+                
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
+    }
     @IBOutlet weak var barcodeImage: UIImageView!
     @IBOutlet weak var nameLogoFirstLetter: UILabel!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    var code = "mvVsU2vhw9HNzpCCCV6ojhpU7CFFc1277z"
+    @IBOutlet weak var labelToTellTheUserToScanBarcode: UILabel!
+    @IBOutlet weak var blockchainAddress: UILabel!
+    @IBOutlet weak var walletBalance: UILabel!
+    
     override func viewDidAppear(_ animated: Bool) {
         nameLogoFirstLetter.layer.cornerRadius = nameLogoFirstLetter.frame.height/2
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        walletBalance.text = String(balance) + " BTC"
+        labelToTellTheUserToScanBarcode.text = "Scan this code to make payments to " + name
+        blockchainAddress.text = String(describing: address["address"])
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         // For generating qr code
+        var code = String(describing: address["address"])
         if self.qrcodeImage == nil {
             if code == "" {
                 print("no qr code available")

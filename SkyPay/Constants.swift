@@ -12,5 +12,7 @@ let address:NSDictionary = ["private":"69de29a762dbbb8da2547003d40a6fd4cef8b1812
 let url = "https://api.blockcypher.com/v1/btc/test3/"
 let name = "Saransh Mittal"
 let token = "3b42c4dba90b4135a14418a961bcbc0e"
+var balance:Int = 200
+
 
 

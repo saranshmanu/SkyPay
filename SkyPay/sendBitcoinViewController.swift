@@ -8,34 +8,159 @@
 
 import UIKit
 import AVFoundation
+import WVCheckMark
 
 class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
+    @IBOutlet weak var walletBalance: UILabel!
+    @IBOutlet weak var informationPanelHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var paymentStatus: UILabel!
+    @IBOutlet weak var mapImageView: UIImageView!
+    @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var amount: UITextField!
     @IBOutlet weak var payButton: UIButton!
+    @IBOutlet weak var loader: UIVisualEffectView!
+    
     @IBAction func payAction(_ sender: Any) {
+        viewSample.reloadInputViews()
+        logoImage.isHidden = false
+        viewSample.isHidden = false
+        mapImageView.isHidden = false
+        paymentStatus.isHidden = true
+        checkMark.isHidden = true
+        UIView.animate(withDuration: 0.2, animations: {
+            self.informationPanelHeightConstraint.constant = self.informationPanelHeightConstraint.constant - 50
+            self.loader.isHidden = false
+            self.loader.alpha = 1.0
+            self.view.layoutIfNeeded()
+        })
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        setupViewsForRippleEffect()
+        payment()
     }
+    
+    @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var scanAddress: UIButton!
+    
+    func payment(){
+        let when = DispatchTime.now() + 5
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            // Your code with delay
+            self.paymentSuccess()
+        }
+    }
+    
+    func paymentSuccess() {
+        paymentStatus.isHidden = false
+        checkMark.isHidden = false
+        paymentStatus.text = "SUCCESS"
+        logoImage.isHidden = true
+        viewSample.isHidden = true
+        mapImageView.isHidden = true
+        checkMark.setColor(color: UIColor.init(red: 34/255, green: 139/255, blue: 34/255, alpha: 1.0).cgColor)
+        checkMark.setDuration(speed: 1.5)
+        checkMark.start()
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            // Your code with delay
+            UIView.animate(withDuration: 0.4, animations: {
+                self.informationPanelHeightConstraint.constant = self.informationPanelHeightConstraint.constant + 50
+                self.loader.alpha = 0.0
+                self.navigationController?.setNavigationBarHidden(false, animated: true)
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    func paymentFailure(){
+        paymentStatus.isHidden = false
+        checkMark.isHidden = false
+        paymentStatus.text = "FAILURE"
+        logoImage.isHidden = true
+        viewSample.isHidden = true
+        mapImageView.isHidden = true
+        checkMark.setColor(color: UIColor.init(red: 174/255, green: 34/255, blue: 34/255, alpha: 1.0).cgColor)
+        checkMark.setDuration(speed: 1.5)
+        checkMark.startX()
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            // Your code with delay
+            UIView.animate(withDuration: 0.4, animations: {
+                self.informationPanelHeightConstraint.constant = self.informationPanelHeightConstraint.constant + 50
+                self.loader.alpha = 0.0
+                self.navigationController?.setNavigationBarHidden(false, animated: true)
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
     @IBAction func scanAddressAction(_ sender: Any) {
         scan()
     }
+    
     // for tapping
     func dismissKeyboard() {
         address.resignFirstResponder()
         amount.resignFirstResponder()
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        if !UIAccessibilityIsReduceTransparencyEnabled() {
+//            backgroundView.backgroundColor = UIColor.clear
+//            let blurEffect = UIBlurEffect(style: .dark)
+//            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+//            //always fill the view
+//            blurEffectView.frame = self.view.bounds
+//            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//            backgroundView.insertSubview(blurEffectView, at: 0)//if you have more UIViews, use an insertSubview API to place it where needed
+//            backgroundView.layoutSubviews()
+//        } else {
+//            self.backgroundView.backgroundColor = UIColor.black
+//        }
+//    }
+    
+    @IBOutlet weak var viewSample: UIView!
+    @IBOutlet weak var checkMark: WVCheckMark!
+    
+    func setupViewsForRippleEffect(){
+        viewSample.layer.zPosition = 1111
+        self.viewSample.layer.cornerRadius = self.viewSample.frame.size.width / 2;
+        self.viewSample.clipsToBounds = true
+        self.viewSample.backgroundColor = UIColor.init(red: 34/255, green: 139/255, blue: 34/255, alpha: 0.5)
+        animateRippleEffect()
+    }
+    
+    func animateRippleEffect(){
+        self.viewSample.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+        UIView.animate(withDuration: 0.5, animations: {
+            self.viewSample.alpha = 1.0
+        })
+        self.view.layoutIfNeeded()
+        UIView.animate(withDuration: 1, delay: 0,options: UIViewAnimationOptions.curveLinear,animations: {
+            self.viewSample.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            self.viewSample.layer.cornerRadius = self.viewSample.frame.height/2
+            self.viewSample.alpha = 0.0
+        }, completion: {finished in
+            self.animateRippleEffect()
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        walletBalance.text = String(describing: balance) + " BTC"
+        loader.isHidden = true
+        loader.alpha = 0.0
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(sendBitcoinViewController.dismissKeyboard)))
         var navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         // Do any additional setup after loading the view.
         address.layer.cornerRadius = 10//address.frame.height/2
-        address.attributedPlaceholder = NSAttributedString(string: address.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.init(red: 238/255, green: 212/255, blue: 123/255, alpha: 1.0)])
+        address.attributedPlaceholder = NSAttributedString(string: address.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         amount.layer.cornerRadius = 10//amount.frame.height/2
-        amount.attributedPlaceholder = NSAttributedString(string: amount.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.init(red: 238/255, green: 212/255, blue: 123/255, alpha: 1.0)])
+        amount.attributedPlaceholder = NSAttributedString(string: amount.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
         payButton.layer.cornerRadius = payButton.frame.height/2
+        scanAddress.layer.cornerRadius = 10
     }
     lazy var reader = QRCodeReaderViewController(builder: QRCodeReaderViewControllerBuilder {
         $0.reader = QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode])
@@ -43,7 +168,6 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
     })
     
     // MARK: - QRCodeReader Delegate Methods
-    
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
         reader.stopScanning()
         dismiss(animated: true, completion: nil)
