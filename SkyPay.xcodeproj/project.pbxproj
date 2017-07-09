@@ -8,17 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1BF4289E476B0619FBC5F318 /* Pods_SkyPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06760B3901502A1CA72006 /* Pods_SkyPay.framework */; };
-		95029C621EF0FD9700044079 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C611EF0FD9700044079 /* SignUpViewController.swift */; };
-		95029C711EF0FFE600044079 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C671EF0FFE600044079 /* ReaderOverlayView.swift */; };
-		95029C721EF0FFE600044079 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C681EF0FFE600044079 /* SwitchCameraButton.swift */; };
-		95029C731EF0FFE600044079 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C691EF0FFE600044079 /* ToggleTorchButton.swift */; };
-		95029C741EF0FFE600044079 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C6A1EF0FFE600044079 /* QRCodeReader.swift */; };
-		95029C751EF0FFE600044079 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C6B1EF0FFE600044079 /* QRCodeReaderResult.swift */; };
-		95029C761EF0FFE600044079 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C6C1EF0FFE600044079 /* QRCodeReaderView.swift */; };
-		95029C771EF0FFE600044079 /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C6D1EF0FFE600044079 /* QRCodeReaderViewContainer.swift */; };
-		95029C781EF0FFE600044079 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C6E1EF0FFE600044079 /* QRCodeReaderViewController.swift */; };
-		95029C791EF0FFE600044079 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C6F1EF0FFE600044079 /* QRCodeReaderViewControllerBuilder.swift */; };
-		95029C7A1EF0FFE600044079 /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95029C701EF0FFE600044079 /* QRCodeReaderViewControllerDelegate.swift */; };
 		952B2C8A1EDB1A71001C8D50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B2C891EDB1A71001C8D50 /* LoginViewController.swift */; };
 		952B2C8C1EDB1EAA001C8D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 952B2C8B1EDB1EAA001C8D50 /* GoogleService-Info.plist */; };
 		952B2C921EDB38DD001C8D50 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 952B2C8F1EDB3862001C8D50 /* SF-UI-Display-Medium.otf */; };
@@ -29,11 +18,20 @@
 		954B46781EC3600600DDC7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954B46761EC3600600DDC7FA /* Main.storyboard */; };
 		954B467B1EC3600600DDC7FA /* SkyPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */; };
 		954B46801EC3600600DDC7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954B467E1EC3600600DDC7FA /* LaunchScreen.storyboard */; };
-		956C7E501EF7095900111442 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C7E4F1EF7092800111442 /* XMLParser.swift */; };
 		958072591EEC916F002F7AAC /* ExchangeRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */; };
 		9580725B1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */; };
 		958072651EEDA8DA002F7AAC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958072631EEDA8DA002F7AAC /* SWRevealViewController.m */; };
 		958784E41EDDCEC30088E51F /* DidotHTFB11Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 958784E31EDDCEB70088E51F /* DidotHTFB11Bold.ttf */; };
+		95907D571F12AC3D0070C7A5 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D4C1F12AC120070C7A5 /* QRCodeReader.swift */; };
+		95907D581F12AC440070C7A5 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D4D1F12AC120070C7A5 /* QRCodeReaderResult.swift */; };
+		95907D591F12AC440070C7A5 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D4E1F12AC120070C7A5 /* QRCodeReaderView.swift */; };
+		95907D5A1F12AC440070C7A5 /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D4F1F12AC120070C7A5 /* QRCodeReaderViewContainer.swift */; };
+		95907D5B1F12AC440070C7A5 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D501F12AC120070C7A5 /* QRCodeReaderViewController.swift */; };
+		95907D5C1F12AC440070C7A5 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D511F12AC120070C7A5 /* QRCodeReaderViewControllerBuilder.swift */; };
+		95907D5D1F12AC440070C7A5 /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D521F12AC120070C7A5 /* QRCodeReaderViewControllerDelegate.swift */; };
+		95907D5E1F12AC440070C7A5 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D531F12AC120070C7A5 /* ReaderOverlayView.swift */; };
+		95907D5F1F12AC440070C7A5 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D541F12AC120070C7A5 /* SwitchCameraButton.swift */; };
+		95907D601F12AC440070C7A5 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D551F12AC120070C7A5 /* ToggleTorchButton.swift */; };
 		959755B21EF502BF003E1F26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959755B11EF502BF003E1F26 /* Constants.swift */; };
 		959755B41EF54628003E1F26 /* TransactionHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */; };
 		959755B61EF553DA003E1F26 /* sendBitcoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */; };
@@ -45,17 +43,6 @@
 
 /* Begin PBXFileReference section */
 		761B2BB808D25716E92BFADA /* Pods-SkyPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyPay/Pods-SkyPay.debug.xcconfig"; sourceTree = "<group>"; };
-		95029C611EF0FD9700044079 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		95029C671EF0FFE600044079 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
-		95029C681EF0FFE600044079 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
-		95029C691EF0FFE600044079 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
-		95029C6A1EF0FFE600044079 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
-		95029C6B1EF0FFE600044079 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
-		95029C6C1EF0FFE600044079 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
-		95029C6D1EF0FFE600044079 /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
-		95029C6E1EF0FFE600044079 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
-		95029C6F1EF0FFE600044079 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
-		95029C701EF0FFE600044079 /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
 		952B2C891EDB1A71001C8D50 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		952B2C8B1EDB1EAA001C8D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		952B2C8F1EDB3862001C8D50 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
@@ -68,13 +55,22 @@
 		954B467A1EC3600600DDC7FA /* SkyPay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkyPay.xcdatamodel; sourceTree = "<group>"; };
 		954B467F1EC3600600DDC7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		954B46811EC3600600DDC7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		956C7E4F1EF7092800111442 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewController.swift; sourceTree = "<group>"; };
 		9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateTableViewCell.swift; sourceTree = "<group>"; };
 		958072621EEDA8D9002F7AAC /* SkyPay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyPay-Bridging-Header.h"; sourceTree = "<group>"; };
 		958072631EEDA8DA002F7AAC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		958072641EEDA8DA002F7AAC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		958784E31EDDCEB70088E51F /* DidotHTFB11Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DidotHTFB11Bold.ttf; sourceTree = "<group>"; };
+		95907D4C1F12AC120070C7A5 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		95907D4D1F12AC120070C7A5 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		95907D4E1F12AC120070C7A5 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		95907D4F1F12AC120070C7A5 /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
+		95907D501F12AC120070C7A5 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		95907D511F12AC120070C7A5 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
+		95907D521F12AC120070C7A5 /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		95907D531F12AC120070C7A5 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		95907D541F12AC120070C7A5 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		95907D551F12AC120070C7A5 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
 		959755B11EF502BF003E1F26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendBitcoinViewController.swift; sourceTree = "<group>"; };
@@ -107,24 +103,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		95029C7B1EF0FFEB00044079 /* QR Code */ = {
-			isa = PBXGroup;
-			children = (
-				95029C671EF0FFE600044079 /* ReaderOverlayView.swift */,
-				95029C681EF0FFE600044079 /* SwitchCameraButton.swift */,
-				95029C691EF0FFE600044079 /* ToggleTorchButton.swift */,
-				95029C6A1EF0FFE600044079 /* QRCodeReader.swift */,
-				95029C6B1EF0FFE600044079 /* QRCodeReaderResult.swift */,
-				95029C6C1EF0FFE600044079 /* QRCodeReaderView.swift */,
-				95029C6D1EF0FFE600044079 /* QRCodeReaderViewContainer.swift */,
-				95029C6E1EF0FFE600044079 /* QRCodeReaderViewController.swift */,
-				95029C6F1EF0FFE600044079 /* QRCodeReaderViewControllerBuilder.swift */,
-				95029C701EF0FFE600044079 /* QRCodeReaderViewControllerDelegate.swift */,
-			);
-			name = "QR Code";
-			path = ..;
-			sourceTree = "<group>";
-		};
 		954B46661EC3600600DDC7FA = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +124,7 @@
 		954B46711EC3600600DDC7FA /* SkyPay */ = {
 			isa = PBXGroup;
 			children = (
+				95907D441F12AC120070C7A5 /* QR reader */,
 				958072611EEDA890002F7AAC /* SWRevealViewController */,
 				95B4D7821EC3738D00CB0F6F /* Assets.xcassets */,
 				954B46721EC3600600DDC7FA /* AppDelegate.swift */,
@@ -164,7 +143,6 @@
 				952B2C8B1EDB1EAA001C8D50 /* GoogleService-Info.plist */,
 				954B46811EC3600600DDC7FA /* Info.plist */,
 				954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */,
-				95C909E71EF2E2A40060D830 /* Sign Up */,
 				958784E21EDDC54E0088E51F /* Fonts */,
 			);
 			path = SkyPay;
@@ -192,14 +170,21 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		95C909E71EF2E2A40060D830 /* Sign Up */ = {
+		95907D441F12AC120070C7A5 /* QR reader */ = {
 			isa = PBXGroup;
 			children = (
-				956C7E4F1EF7092800111442 /* XMLParser.swift */,
-				95029C611EF0FD9700044079 /* SignUpViewController.swift */,
-				95029C7B1EF0FFEB00044079 /* QR Code */,
+				95907D4C1F12AC120070C7A5 /* QRCodeReader.swift */,
+				95907D4D1F12AC120070C7A5 /* QRCodeReaderResult.swift */,
+				95907D4E1F12AC120070C7A5 /* QRCodeReaderView.swift */,
+				95907D4F1F12AC120070C7A5 /* QRCodeReaderViewContainer.swift */,
+				95907D501F12AC120070C7A5 /* QRCodeReaderViewController.swift */,
+				95907D511F12AC120070C7A5 /* QRCodeReaderViewControllerBuilder.swift */,
+				95907D521F12AC120070C7A5 /* QRCodeReaderViewControllerDelegate.swift */,
+				95907D531F12AC120070C7A5 /* ReaderOverlayView.swift */,
+				95907D541F12AC120070C7A5 /* SwitchCameraButton.swift */,
+				95907D551F12AC120070C7A5 /* ToggleTorchButton.swift */,
 			);
-			path = "Sign Up";
+			path = "QR reader";
 			sourceTree = "<group>";
 		};
 		9E27DC0CE4930A6F1E7A1154 /* Frameworks */ = {
@@ -340,31 +325,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95029C731EF0FFE600044079 /* ToggleTorchButton.swift in Sources */,
-				95029C771EF0FFE600044079 /* QRCodeReaderViewContainer.swift in Sources */,
-				95029C761EF0FFE600044079 /* QRCodeReaderView.swift in Sources */,
+				95907D5B1F12AC440070C7A5 /* QRCodeReaderViewController.swift in Sources */,
+				95907D581F12AC440070C7A5 /* QRCodeReaderResult.swift in Sources */,
 				952B2C8A1EDB1A71001C8D50 /* LoginViewController.swift in Sources */,
 				958072591EEC916F002F7AAC /* ExchangeRateViewController.swift in Sources */,
-				95029C781EF0FFE600044079 /* QRCodeReaderViewController.swift in Sources */,
 				959755B21EF502BF003E1F26 /* Constants.swift in Sources */,
-				95029C791EF0FFE600044079 /* QRCodeReaderViewControllerBuilder.swift in Sources */,
 				954B467B1EC3600600DDC7FA /* SkyPay.xcdatamodeld in Sources */,
 				953451601EF4793500C17C59 /* StartPageViewController.swift in Sources */,
 				95AA3F191F03D75800286581 /* SignupViewController.swift in Sources */,
 				95D23A2C1EF6F2DF00F256F2 /* ProfileViewController.swift in Sources */,
-				956C7E501EF7095900111442 /* XMLParser.swift in Sources */,
-				95029C751EF0FFE600044079 /* QRCodeReaderResult.swift in Sources */,
 				959755B61EF553DA003E1F26 /* sendBitcoinViewController.swift in Sources */,
-				95029C621EF0FD9700044079 /* SignUpViewController.swift in Sources */,
-				95029C7A1EF0FFE600044079 /* QRCodeReaderViewControllerDelegate.swift in Sources */,
-				95029C721EF0FFE600044079 /* SwitchCameraButton.swift in Sources */,
+				95907D601F12AC440070C7A5 /* ToggleTorchButton.swift in Sources */,
 				9580725B1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift in Sources */,
 				959755B41EF54628003E1F26 /* TransactionHistoryTableViewCell.swift in Sources */,
+				95907D5A1F12AC440070C7A5 /* QRCodeReaderViewContainer.swift in Sources */,
+				95907D571F12AC3D0070C7A5 /* QRCodeReader.swift in Sources */,
+				95907D5D1F12AC440070C7A5 /* QRCodeReaderViewControllerDelegate.swift in Sources */,
 				958072651EEDA8DA002F7AAC /* SWRevealViewController.m in Sources */,
-				95029C711EF0FFE600044079 /* ReaderOverlayView.swift in Sources */,
+				95907D5C1F12AC440070C7A5 /* QRCodeReaderViewControllerBuilder.swift in Sources */,
+				95907D591F12AC440070C7A5 /* QRCodeReaderView.swift in Sources */,
+				95907D5E1F12AC440070C7A5 /* ReaderOverlayView.swift in Sources */,
 				954B46731EC3600600DDC7FA /* AppDelegate.swift in Sources */,
+				95907D5F1F12AC440070C7A5 /* SwitchCameraButton.swift in Sources */,
 				95BB05821EF5B78A00223C88 /* RippleEffect.swift in Sources */,
-				95029C741EF0FFE600044079 /* QRCodeReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
