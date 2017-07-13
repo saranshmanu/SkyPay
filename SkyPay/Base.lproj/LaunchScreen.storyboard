@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Didot.ttc">
+            <string>Didot</string>
+        </array>
         <array key="SF-UI-Display-Thin.otf">
             <string>SFUIDisplay-Thin</string>
         </array>
@@ -27,23 +30,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w5F-Lr-GqY">
-                                <rect key="frame" x="47.5" y="161" width="281.5" height="249"/>
+                                <rect key="frame" x="0.0" y="161.5" width="0.0" height="248.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="What-is-Ethereum-300x300" translatesAutoresizingMaskIntoConstraints="NO" id="nLu-H6-tv2">
-                                        <rect key="frame" x="96" y="0.0" width="90" height="120"/>
+                                        <rect key="frame" x="142.5" y="0.0" width="90" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="GG3-li-FJb"/>
                                             <constraint firstAttribute="height" constant="120" id="sRg-Il-Dam"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SkyPay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEq-BV-0am">
-                                        <rect key="frame" x="0.0" y="120" width="281.5" height="109.5"/>
+                                        <rect key="frame" x="47" y="120" width="281.5" height="109.5"/>
                                         <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="88"/>
                                         <color key="textColor" red="0.096656249999999999" green="0.096268072290000006" blue="0.097044427710000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pay smart" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8T-zq-Yvo">
-                                        <rect key="frame" x="108.5" y="229.5" width="64.5" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="229.5" width="0.0" height="19"/>
                                         <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <nil key="highlightedColor"/>

@@ -38,7 +38,8 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         walletBalance.text = String(balance) + " BTC"
         labelToTellTheUserToScanBarcode.text = "Scan this code to make payments to " + name
-        blockchainAddress.text = String(describing: address["address"])
+        blockchainAddress.text = String(describing: address["address"]!)
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"

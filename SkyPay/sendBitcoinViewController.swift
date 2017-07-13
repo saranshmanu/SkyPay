@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import WVCheckMark
 import Alamofire
+import LocalAuthentication
 
 class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
@@ -24,21 +25,7 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
     @IBOutlet weak var loader: UIVisualEffectView!
     
     @IBAction func payAction(_ sender: Any) {
-        viewSample.reloadInputViews()
-        logoImage.isHidden = false
-        viewSample.isHidden = false
-        mapImageView.isHidden = false
-        paymentStatus.isHidden = true
-        checkMark.isHidden = true
-        UIView.animate(withDuration: 0.2, animations: {
-            self.informationPanelHeightConstraint.constant = self.informationPanelHeightConstraint.constant - 50
-            self.loader.isHidden = false
-            self.loader.alpha = 1.0
-            self.view.layoutIfNeeded()
-        })
-        navigationController?.setNavigationBarHidden(true, animated: true)
-        setupViewsForRippleEffect()
-        payment()
+        fingerprintAuthentication()
     }
     
     @IBOutlet weak var logoImage: UIImageView!
@@ -53,6 +40,7 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
     }
     
     func paymentSuccess() {
+        
         paymentStatus.isHidden = false
         checkMark.isHidden = false
         paymentStatus.text = "SUCCESS"
@@ -104,6 +92,56 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
     func dismissKeyboard() {
         PaymentAddress.resignFirstResponder()
         amount.resignFirstResponder()
+    }
+    
+    //for activation of finger print authentication this function is used along with notify function
+    func fingerprintAuthentication(){
+        let context = LAContext()
+        var error: NSError?
+        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics,error: &error){
+                // Device can use TouchID
+                context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics,localizedReason: "Access requires authentication",reply: {(success, error) in
+                        DispatchQueue.main.async {
+                            if error != nil {
+                                switch error!._code {
+                                case LAError.Code.systemCancel.rawValue:self.notifyUser("Session cancelled",err: error?.localizedDescription)
+                                case LAError.Code.userCancel.rawValue:self.notifyUser("Please try again",err: error?.localizedDescription)
+                                case LAError.Code.userFallback.rawValue:self.notifyUser("Authentication",err: "Success")
+                                // Custom code to obtain password here
+                                default:self.notifyUser("Authentication failed",err: error?.localizedDescription)
+                                }
+                            }
+                            else {
+                                //If Authentication is successfull then payment is carried forward
+                                self.viewSample.reloadInputViews()
+                                self.logoImage.isHidden = false
+                                self.viewSample.isHidden = false
+                                self.mapImageView.isHidden = false
+                                self.paymentStatus.isHidden = true
+                                self.checkMark.isHidden = true
+                                UIView.animate(withDuration: 0.2, animations: {
+                                    self.informationPanelHeightConstraint.constant = self.informationPanelHeightConstraint.constant - 50
+                                    self.loader.isHidden = false
+                                    self.loader.alpha = 1.0
+                                    self.view.layoutIfNeeded()
+                                })
+                                self.navigationController?.setNavigationBarHidden(true, animated: true)
+                                self.setupViewsForRippleEffect()
+                                self.payment()
+                            }
+                        }
+                })
+        }
+        else {
+                // Device cannot use TouchID
+        }
+    }
+    
+    func notifyUser(_ msg: String, err: String?) {
+        let alert = UIAlertController(title: msg,message: err,preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "OK",style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true,completion: nil)
     }
     
 //    override func viewDidAppear(_ animated: Bool) {
