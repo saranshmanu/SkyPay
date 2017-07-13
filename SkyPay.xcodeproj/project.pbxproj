@@ -18,9 +18,9 @@
 		954B46781EC3600600DDC7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954B46761EC3600600DDC7FA /* Main.storyboard */; };
 		954B467B1EC3600600DDC7FA /* SkyPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */; };
 		954B46801EC3600600DDC7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954B467E1EC3600600DDC7FA /* LaunchScreen.storyboard */; };
+		95546CF31F12B82700295A4C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95546CF11F12B80F00295A4C /* SWRevealViewController.m */; };
 		958072591EEC916F002F7AAC /* ExchangeRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */; };
 		9580725B1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */; };
-		958072651EEDA8DA002F7AAC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958072631EEDA8DA002F7AAC /* SWRevealViewController.m */; };
 		958784E41EDDCEC30088E51F /* DidotHTFB11Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 958784E31EDDCEB70088E51F /* DidotHTFB11Bold.ttf */; };
 		95907D571F12AC3D0070C7A5 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D4C1F12AC120070C7A5 /* QRCodeReader.swift */; };
 		95907D581F12AC440070C7A5 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95907D4D1F12AC120070C7A5 /* QRCodeReaderResult.swift */; };
@@ -55,11 +55,11 @@
 		954B467A1EC3600600DDC7FA /* SkyPay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkyPay.xcdatamodel; sourceTree = "<group>"; };
 		954B467F1EC3600600DDC7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		954B46811EC3600600DDC7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95546CF11F12B80F00295A4C /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		95546CF21F12B80F00295A4C /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewController.swift; sourceTree = "<group>"; };
 		9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateTableViewCell.swift; sourceTree = "<group>"; };
 		958072621EEDA8D9002F7AAC /* SkyPay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyPay-Bridging-Header.h"; sourceTree = "<group>"; };
-		958072631EEDA8DA002F7AAC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
-		958072641EEDA8DA002F7AAC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		958784E31EDDCEB70088E51F /* DidotHTFB11Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DidotHTFB11Bold.ttf; sourceTree = "<group>"; };
 		95907D4C1F12AC120070C7A5 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		95907D4D1F12AC120070C7A5 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 		958072611EEDA890002F7AAC /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
-				958072641EEDA8DA002F7AAC /* SWRevealViewController.h */,
-				958072631EEDA8DA002F7AAC /* SWRevealViewController.m */,
+				95546CF21F12B80F00295A4C /* SWRevealViewController.h */,
+				95546CF11F12B80F00295A4C /* SWRevealViewController.m */,
 				958072621EEDA8D9002F7AAC /* SkyPay-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
@@ -328,6 +328,7 @@
 				95907D5B1F12AC440070C7A5 /* QRCodeReaderViewController.swift in Sources */,
 				95907D581F12AC440070C7A5 /* QRCodeReaderResult.swift in Sources */,
 				952B2C8A1EDB1A71001C8D50 /* LoginViewController.swift in Sources */,
+				95546CF31F12B82700295A4C /* SWRevealViewController.m in Sources */,
 				958072591EEC916F002F7AAC /* ExchangeRateViewController.swift in Sources */,
 				959755B21EF502BF003E1F26 /* Constants.swift in Sources */,
 				954B467B1EC3600600DDC7FA /* SkyPay.xcdatamodeld in Sources */,
@@ -341,7 +342,6 @@
 				95907D5A1F12AC440070C7A5 /* QRCodeReaderViewContainer.swift in Sources */,
 				95907D571F12AC3D0070C7A5 /* QRCodeReader.swift in Sources */,
 				95907D5D1F12AC440070C7A5 /* QRCodeReaderViewControllerDelegate.swift in Sources */,
-				958072651EEDA8DA002F7AAC /* SWRevealViewController.m in Sources */,
 				95907D5C1F12AC440070C7A5 /* QRCodeReaderViewControllerBuilder.swift in Sources */,
 				95907D591F12AC440070C7A5 /* QRCodeReaderView.swift in Sources */,
 				95907D5E1F12AC440070C7A5 /* ReaderOverlayView.swift in Sources */,

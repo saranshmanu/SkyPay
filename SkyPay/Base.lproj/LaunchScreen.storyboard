@@ -30,7 +30,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w5F-Lr-GqY">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="161.5" width="0.0" height="248.5"/>
+=======
+                                <rect key="frame" x="0.0" y="162" width="0.0" height="248.5"/>
+>>>>>>> 3c3560b5e2ba560f6882de8cef53d3426c5ed293
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="What-is-Ethereum-300x300" translatesAutoresizingMaskIntoConstraints="NO" id="nLu-H6-tv2">
                                         <rect key="frame" x="142.5" y="0.0" width="90" height="120"/>
