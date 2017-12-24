@@ -1,0 +1,30 @@
+{
+  "name": "componentbank",
+  "version": "1.0.0",
+  "description": "IEEE Electronic components bank",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubis-me/componentbank.git"
+  },
+  "author": "abhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anubis-me/componentbank/issues"
+  },
+  "homepage": "https://github.com/anubis-me/componentbank#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.12.4",
+    "mongoose-title-case": "0.0.4",
+    "mongoose-validator": "^1.3.2",
+    "morgan": "^1.9.0"
+  }
+}
