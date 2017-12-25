@@ -1,0 +1,14 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.42.1 clang-802.0.36)"
+options: "a1168699363600c271138388a0c7a083"
+build_time: [546003981, 725965000]
+inputs:
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/Helpers/Configuring.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/Helpers/ConstraintsHalper.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/FillAnimatinView/FillAnimationView.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/GestureControl/GestureControl.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/OnboardingContantView/Item/OnboardingContantViewItem.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/OnboardingContantView/OnboardingContentView.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/PageView/PageContainerView/PageContainer.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/PageView/PageView.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/PageView/Item/PageViewItem.swift": [545310729, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/paper-onboarding/Source/PaperOnboarding.swift": [545310729, 0]

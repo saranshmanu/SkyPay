@@ -1,0 +1,166 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo7UIImage", ""]
+- ["CSo7UIImage", "tgr_aspectFitRectForSize"]
+provides-dynamic-lookup:
+- "tgr_aspectFitRectForSize"
+depends-top-level:
+- !private "*"
+- !private "-"
+- !private "/"
+- !private ">"
+- "AssignmentPrecedence"
+- !private "CGFloat"
+- "CGRect"
+- "CGSize"
+- "UIImage"
+- !private "ceil"
+depends-member:
+- !private ["Ps9AnyObject", "CGRect"]
+- !private ["Ps9AnyObject", "ceil"]
+- !private ["Ps9AnyObject", "size"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
+- !private ["VSC6CGRect", "origin"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGRect", "zero"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps7CVarArg", "CGRect"]
+- !private ["Ps7CVarArg", "ceil"]
+- !private ["Ps7CVarArg", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRect"]
+- !private ["Ps28CustomDebugStringConvertible", "ceil"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "origin"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps28CustomDebugStringConvertible", "x"]
+- !private ["Ps28CustomDebugStringConvertible", "y"]
+- !private ["Ps28CustomDebugStringConvertible", "zero"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "origin"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "x"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "y"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "zero"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "origin"]
+- !private ["Ps17CustomReflectable", "size"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps17CustomReflectable", "x"]
+- !private ["Ps17CustomReflectable", "y"]
+- !private ["Ps17CustomReflectable", "zero"]
+- !private ["Ps23CustomStringConvertible", "CGRect"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "ceil"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- !private ["Ps9Equatable", "CGRect"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "ceil"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "origin"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps9Equatable", "x"]
+- !private ["Ps9Equatable", "y"]
+- !private ["Ps9Equatable", "zero"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "CGRect"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "ceil"]
+- !private ["Ps8Hashable", "size"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSo8NSCoding", "CGRect"]
+- !private ["PSo8NSCoding", "ceil"]
+- !private ["PSo8NSCoding", "size"]
+- !private ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "CGSize"]
+- !private ["CSo8NSObject", "ceil"]
+- !private ["CSo8NSObject", "size"]
+- ["CSo8NSObject", "tgr_aspectFitRectForSize"]
+- !private ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "ceil"]
+- !private ["PSo16NSObjectProtocol", "size"]
+- !private ["PSo14NSSecureCoding", "CGRect"]
+- !private ["PSo14NSSecureCoding", "ceil"]
+- !private ["PSo14NSSecureCoding", "size"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRect"]
+- !private ["PSo29UIAccessibilityIdentification", "ceil"]
+- !private ["PSo29UIAccessibilityIdentification", "size"]
+- !private ["CSo7UIImage", "CGFloat"]
+- ["CSo7UIImage", "CGRect"]
+- ["CSo7UIImage", "CGSize"]
+- !private ["CSo7UIImage", "ceil"]
+- !private ["CSo7UIImage", "size"]
+- ["CSo7UIImage", "tgr_aspectFitRectForSize"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps26_ExpressibleByImageLiteral", "CGRect"]
+- !private ["Ps26_ExpressibleByImageLiteral", "ceil"]
+- !private ["Ps26_ExpressibleByImageLiteral", "size"]
+- !private ["Ps9_Hashable", "CGRect"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "ceil"]
+- !private ["Ps9_Hashable", "size"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
+- !private ["Ps21_ObjectiveCBridgeable", "origin"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
+- !private ["Ps21_ObjectiveCBridgeable", "zero"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sb"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- !private "Ps7CVarArg"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "PSo8NSCoding"
+- "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "PSo29UIAccessibilityIdentification"
+- "CSo7UIImage"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/Target Support Files/ImageSlideshow/ImageSlideshow-umbrella.h"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Intermediates/Pods.build/Debug-iphoneos/ImageSlideshow.build/unextended-module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "130178dbb60e6b50e0fffa70193f3329"

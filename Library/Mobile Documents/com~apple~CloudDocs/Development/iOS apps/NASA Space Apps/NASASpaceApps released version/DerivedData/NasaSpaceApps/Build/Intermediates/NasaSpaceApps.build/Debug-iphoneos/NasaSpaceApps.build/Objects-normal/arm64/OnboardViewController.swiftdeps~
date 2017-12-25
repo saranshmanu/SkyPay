@@ -1,0 +1,568 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C13NasaSpaceApps14ViewController"
+provides-member:
+- ["C13NasaSpaceApps14ViewController", ""]
+provides-dynamic-lookup:
+- "DoneAction"
+- "DoneButton"
+- "didReceiveMemoryWarning"
+- "onboardingDidTransitonToIndex"
+- "onboardingItemsCount"
+- "onboardingWillTransitonToIndex"
+- "viewDidLoad"
+- "viewWillAppear"
+depends-top-level:
+- !private "=="
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Int"
+- "OnboardingContentViewItem"
+- "OnboardingItemInfo"
+- "PaperOnboarding"
+- "PaperOnboardingDataSource"
+- "PaperOnboardingDelegate"
+- !private "StringLiteralType"
+- "UIButton"
+- !private "UIFont"
+- "UIViewController"
+- "ViewController"
+depends-member:
+- !private ["Ps9AnyObject", "DoneButton"]
+- ["Ps9AnyObject", "OnboardingContentViewItem"]
+- ["Ps9AnyObject", "OnboardingItemInfo"]
+- ["Ps9AnyObject", "PaperOnboarding"]
+- !private ["Ps9AnyObject", "UIFont"]
+- !private ["Ps9AnyObject", "boldSystemFont"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "isHidden"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "onboarding"]
+- !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "storyboard"]
+- !private ["Ps9AnyObject", "systemFont"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "viewWillAppear"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["Ps7CVarArg", "DoneButton"]
+- ["Ps7CVarArg", "OnboardingContentViewItem"]
+- ["Ps7CVarArg", "OnboardingItemInfo"]
+- ["Ps7CVarArg", "PaperOnboarding"]
+- !private ["Ps7CVarArg", "UIFont"]
+- !private ["Ps7CVarArg", "boldSystemFont"]
+- !private ["Ps7CVarArg", "cornerRadius"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "isHidden"]
+- !private ["Ps7CVarArg", "layer"]
+- !private ["Ps7CVarArg", "onboarding"]
+- !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "storyboard"]
+- !private ["Ps7CVarArg", "systemFont"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "viewWillAppear"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "DoneButton"]
+- ["Ps28CustomDebugStringConvertible", "OnboardingContentViewItem"]
+- ["Ps28CustomDebugStringConvertible", "OnboardingItemInfo"]
+- ["Ps28CustomDebugStringConvertible", "PaperOnboarding"]
+- !private ["Ps28CustomDebugStringConvertible", "UIFont"]
+- !private ["Ps28CustomDebugStringConvertible", "boldSystemFont"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "onboarding"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "storyboard"]
+- !private ["Ps28CustomDebugStringConvertible", "systemFont"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "DoneButton"]
+- ["Ps23CustomStringConvertible", "OnboardingContentViewItem"]
+- ["Ps23CustomStringConvertible", "OnboardingItemInfo"]
+- ["Ps23CustomStringConvertible", "PaperOnboarding"]
+- !private ["Ps23CustomStringConvertible", "UIFont"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "boldSystemFont"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "onboarding"]
+- !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "storyboard"]
+- !private ["Ps23CustomStringConvertible", "systemFont"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "viewWillAppear"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "DoneButton"]
+- ["Ps9Equatable", "OnboardingContentViewItem"]
+- ["Ps9Equatable", "OnboardingItemInfo"]
+- ["Ps9Equatable", "PaperOnboarding"]
+- !private ["Ps9Equatable", "UIFont"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "boldSystemFont"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "isHidden"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "onboarding"]
+- !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "storyboard"]
+- !private ["Ps9Equatable", "systemFont"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "viewWillAppear"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "DoneButton"]
+- ["Ps8Hashable", "OnboardingContentViewItem"]
+- ["Ps8Hashable", "OnboardingItemInfo"]
+- ["Ps8Hashable", "PaperOnboarding"]
+- !private ["Ps8Hashable", "UIFont"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "boldSystemFont"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "isHidden"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "onboarding"]
+- !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "storyboard"]
+- !private ["Ps8Hashable", "systemFont"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "viewWillAppear"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "DoneButton"]
+- ["PSo8NSCoding", "OnboardingContentViewItem"]
+- ["PSo8NSCoding", "OnboardingItemInfo"]
+- ["PSo8NSCoding", "PaperOnboarding"]
+- !private ["PSo8NSCoding", "UIFont"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isHidden"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "onboarding"]
+- !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "storyboard"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "viewWillAppear"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "boldSystemFont"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "systemFont"]
+- !private ["PSo26NSExtensionRequestHandling", "DoneButton"]
+- ["PSo26NSExtensionRequestHandling", "OnboardingContentViewItem"]
+- ["PSo26NSExtensionRequestHandling", "OnboardingItemInfo"]
+- ["PSo26NSExtensionRequestHandling", "PaperOnboarding"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "onboarding"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
+- !private ["PSo26NSExtensionRequestHandling", "storyboard"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- !private ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "DoneAction"]
+- ["CSo8NSObject", "DoneButton"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "OnboardingContentViewItem"]
+- ["CSo8NSObject", "OnboardingItemInfo"]
+- ["CSo8NSObject", "PaperOnboarding"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIFont"]
+- !private ["CSo8NSObject", "boldSystemFont"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "isHidden"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "onboarding"]
+- ["CSo8NSObject", "onboardingDidTransitonToIndex"]
+- ["CSo8NSObject", "onboardingItemsCount"]
+- ["CSo8NSObject", "onboardingWillTransitonToIndex"]
+- !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "storyboard"]
+- !private ["CSo8NSObject", "systemFont"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "DoneButton"]
+- ["PSo16NSObjectProtocol", "OnboardingContentViewItem"]
+- ["PSo16NSObjectProtocol", "OnboardingItemInfo"]
+- ["PSo16NSObjectProtocol", "PaperOnboarding"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
+- !private ["PSo16NSObjectProtocol", "boldSystemFont"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "onboarding"]
+- !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "storyboard"]
+- !private ["PSo16NSObjectProtocol", "systemFont"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "viewWillAppear"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo12UIAppearance", "isHidden"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo21UIAppearanceContainer", "DoneButton"]
+- ["PSo21UIAppearanceContainer", "OnboardingContentViewItem"]
+- ["PSo21UIAppearanceContainer", "OnboardingItemInfo"]
+- ["PSo21UIAppearanceContainer", "PaperOnboarding"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "onboarding"]
+- !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "storyboard"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "viewWillAppear"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "isHidden"]
+- !private ["CSo8UIButton", "layer"]
+- !private ["PSo18UIContentContainer", "DoneButton"]
+- ["PSo18UIContentContainer", "OnboardingContentViewItem"]
+- ["PSo18UIContentContainer", "OnboardingItemInfo"]
+- ["PSo18UIContentContainer", "PaperOnboarding"]
+- !private ["PSo18UIContentContainer", "UIFont"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "onboarding"]
+- !private ["PSo18UIContentContainer", "present"]
+- !private ["PSo18UIContentContainer", "storyboard"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- !private ["PSo18UIContentContainer", "viewWillAppear"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "isHidden"]
+- !private ["CSo9UIControl", "layer"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo18UIFocusEnvironment", "DoneButton"]
+- ["PSo18UIFocusEnvironment", "OnboardingContentViewItem"]
+- ["PSo18UIFocusEnvironment", "OnboardingItemInfo"]
+- ["PSo18UIFocusEnvironment", "PaperOnboarding"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "onboarding"]
+- !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "storyboard"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- !private ["PSo18UIFocusEnvironment", "viewWillAppear"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "isHidden"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["CSo6UIFont", "boldSystemFont"]
+- !private ["CSo6UIFont", "init"]
+- !private ["CSo6UIFont", "systemFont"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "DoneAction"]
+- ["CSo11UIResponder", "DoneButton"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "OnboardingContentViewItem"]
+- ["CSo11UIResponder", "OnboardingItemInfo"]
+- ["CSo11UIResponder", "PaperOnboarding"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIFont"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isHidden"]
+- !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "onboarding"]
+- ["CSo11UIResponder", "onboardingDidTransitonToIndex"]
+- ["CSo11UIResponder", "onboardingItemsCount"]
+- ["CSo11UIResponder", "onboardingWillTransitonToIndex"]
+- !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "storyboard"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "DoneButton"]
+- ["PSo30UIResponderStandardEditActions", "OnboardingContentViewItem"]
+- ["PSo30UIResponderStandardEditActions", "OnboardingItemInfo"]
+- ["PSo30UIResponderStandardEditActions", "PaperOnboarding"]
+- !private ["PSo30UIResponderStandardEditActions", "UIFont"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "onboarding"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "storyboard"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "DoneButton"]
+- ["PSo16UIStateRestoring", "OnboardingContentViewItem"]
+- ["PSo16UIStateRestoring", "OnboardingItemInfo"]
+- ["PSo16UIStateRestoring", "PaperOnboarding"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "onboarding"]
+- !private ["PSo16UIStateRestoring", "present"]
+- !private ["PSo16UIStateRestoring", "storyboard"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "viewWillAppear"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
+- !private ["PSo18UITraitEnvironment", "DoneButton"]
+- ["PSo18UITraitEnvironment", "OnboardingContentViewItem"]
+- ["PSo18UITraitEnvironment", "OnboardingItemInfo"]
+- ["PSo18UITraitEnvironment", "PaperOnboarding"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "onboarding"]
+- !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "storyboard"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- !private ["PSo18UITraitEnvironment", "viewWillAppear"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "isHidden"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "DoneAction"]
+- ["CSo16UIViewController", "DoneButton"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "OnboardingContentViewItem"]
+- ["CSo16UIViewController", "OnboardingItemInfo"]
+- ["CSo16UIViewController", "PaperOnboarding"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIFont"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "onboarding"]
+- ["CSo16UIViewController", "onboardingDidTransitonToIndex"]
+- ["CSo16UIViewController", "onboardingItemsCount"]
+- ["CSo16UIViewController", "onboardingWillTransitonToIndex"]
+- !private ["CSo16UIViewController", "present"]
+- !private ["CSo16UIViewController", "storyboard"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
+- ["CSo16UIViewController", ""]
+- ["C13NasaSpaceApps14ViewController", "Bool"]
+- ["C13NasaSpaceApps14ViewController", "DoneAction"]
+- ["C13NasaSpaceApps14ViewController", "DoneButton"]
+- ["C13NasaSpaceApps14ViewController", "Int"]
+- ["C13NasaSpaceApps14ViewController", "OnboardingContentViewItem"]
+- ["C13NasaSpaceApps14ViewController", "OnboardingItemInfo"]
+- ["C13NasaSpaceApps14ViewController", "PaperOnboarding"]
+- ["C13NasaSpaceApps14ViewController", "UIButton"]
+- !private ["C13NasaSpaceApps14ViewController", "UIFont"]
+- ["C13NasaSpaceApps14ViewController", "deinit"]
+- ["C13NasaSpaceApps14ViewController", "didReceiveMemoryWarning"]
+- ["C13NasaSpaceApps14ViewController", "init"]
+- !private ["C13NasaSpaceApps14ViewController", "onboarding"]
+- ["C13NasaSpaceApps14ViewController", "onboardingDidTransitonToIndex"]
+- ["C13NasaSpaceApps14ViewController", "onboardingItemsCount"]
+- ["C13NasaSpaceApps14ViewController", "onboardingWillTransitonToIndex"]
+- !private ["C13NasaSpaceApps14ViewController", "present"]
+- !private ["C13NasaSpaceApps14ViewController", "storyboard"]
+- ["C13NasaSpaceApps14ViewController", "viewDidLoad"]
+- ["C13NasaSpaceApps14ViewController", "viewWillAppear"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "DoneButton"]
+- ["Ps9_Hashable", "OnboardingContentViewItem"]
+- ["Ps9_Hashable", "OnboardingItemInfo"]
+- ["Ps9_Hashable", "PaperOnboarding"]
+- !private ["Ps9_Hashable", "UIFont"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "boldSystemFont"]
+- !private ["Ps9_Hashable", "cornerRadius"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "isHidden"]
+- !private ["Ps9_Hashable", "layer"]
+- !private ["Ps9_Hashable", "onboarding"]
+- !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "storyboard"]
+- !private ["Ps9_Hashable", "systemFont"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "viewWillAppear"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "CSo7CALayer"
+- !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo6UIFont"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- !private "CSo12UIStoryboard"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "C13NasaSpaceApps14ViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/paper-onboarding/paper_onboarding.framework/Modules/paper_onboarding.swiftmodule/arm64.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/ImageSlideshow/ImageSlideshow.framework/Modules/ImageSlideshow.swiftmodule/arm64.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/TimelineTableViewCell/TimelineTableViewCell.framework/Modules/TimelineTableViewCell.swiftmodule/arm64.swiftmodule"
+interface-hash: "0df0c11643476cb99938c0f5b1817bac"

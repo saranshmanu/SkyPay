@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.42.1 clang-802.0.36)"
+options: "35df11fb397f7fcbf9173d474ba733c4"
+build_time: [546003984, 237705000]
+inputs:
+  "/Users/apple/Documents/NasaSpaceApps/Pods/TimelineTableViewCell/TimelineTableViewCell/Timeline.swift": [545819673, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/TimelineTableViewCell/TimelineTableViewCell/TimelinePoint.swift": [545819673, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/TimelineTableViewCell/TimelineTableViewCell/TimelineTableViewCell.swift": [545819673, 0]

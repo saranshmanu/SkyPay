@@ -1,0 +1,10 @@
+framework module TimelineTableViewCell {
+  umbrella header "TimelineTableViewCell-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TimelineTableViewCell.Swift {
+    header "TimelineTableViewCell-Swift.h"
+}

@@ -1,0 +1,329 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RegisterWebViewController"
+provides-nominal:
+- "C13NasaSpaceApps25RegisterWebViewController"
+provides-member:
+- ["C13NasaSpaceApps25RegisterWebViewController", ""]
+provides-dynamic-lookup:
+- "RegisterLink"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- "RegisterWebViewController"
+- !private "StringLiteralType"
+- "UIViewController"
+- "UIWebView"
+- !private "URL"
+- !private "URLRequest"
+depends-member:
+- !private ["Ps9AnyObject", "RegisterLink"]
+- !private ["Ps9AnyObject", "URL"]
+- !private ["Ps9AnyObject", "URLRequest"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "loadRequest"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "loadRequest"]
+- !private ["Ps7CVarArg", "RegisterLink"]
+- !private ["Ps7CVarArg", "URL"]
+- !private ["Ps7CVarArg", "URLRequest"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "loadRequest"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "RegisterLink"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- !private ["Ps28CustomDebugStringConvertible", "URLRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "loadRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "RegisterLink"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- !private ["Ps23CustomStringConvertible", "URLRequest"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "loadRequest"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "RegisterLink"]
+- !private ["Ps9Equatable", "URL"]
+- !private ["Ps9Equatable", "URLRequest"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "loadRequest"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "RegisterLink"]
+- !private ["Ps8Hashable", "URL"]
+- !private ["Ps8Hashable", "URLRequest"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "loadRequest"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "RegisterLink"]
+- !private ["PSo8NSCoding", "URL"]
+- !private ["PSo8NSCoding", "URLRequest"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "loadRequest"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "RegisterLink"]
+- !private ["PSo26NSExtensionRequestHandling", "URL"]
+- !private ["PSo26NSExtensionRequestHandling", "URLRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "RegisterLink"]
+- ["CSo8NSObject", "UIWebView"]
+- !private ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "URLRequest"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "loadRequest"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "RegisterLink"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- !private ["PSo16NSObjectProtocol", "URLRequest"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "loadRequest"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- ["C13NasaSpaceApps25RegisterWebViewController", "RegisterLink"]
+- ["C13NasaSpaceApps25RegisterWebViewController", "UIWebView"]
+- !private ["C13NasaSpaceApps25RegisterWebViewController", "URL"]
+- !private ["C13NasaSpaceApps25RegisterWebViewController", "URLRequest"]
+- ["C13NasaSpaceApps25RegisterWebViewController", "deinit"]
+- ["C13NasaSpaceApps25RegisterWebViewController", "didReceiveMemoryWarning"]
+- ["C13NasaSpaceApps25RegisterWebViewController", "init"]
+- ["C13NasaSpaceApps25RegisterWebViewController", "viewDidLoad"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "loadRequest"]
+- !private ["PSo12UIAppearance", "loadRequest"]
+- !private ["PSo21UIAppearanceContainer", "RegisterLink"]
+- !private ["PSo21UIAppearanceContainer", "URL"]
+- !private ["PSo21UIAppearanceContainer", "URLRequest"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "loadRequest"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "RegisterLink"]
+- !private ["PSo18UIContentContainer", "URL"]
+- !private ["PSo18UIContentContainer", "URLRequest"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "loadRequest"]
+- !private ["PSo13UIDynamicItem", "loadRequest"]
+- !private ["PSo18UIFocusEnvironment", "RegisterLink"]
+- !private ["PSo18UIFocusEnvironment", "URL"]
+- !private ["PSo18UIFocusEnvironment", "URLRequest"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "loadRequest"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "loadRequest"]
+- ["CSo11UIResponder", "RegisterLink"]
+- ["CSo11UIResponder", "UIWebView"]
+- !private ["CSo11UIResponder", "URL"]
+- !private ["CSo11UIResponder", "URLRequest"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "loadRequest"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "RegisterLink"]
+- !private ["PSo30UIResponderStandardEditActions", "URL"]
+- !private ["PSo30UIResponderStandardEditActions", "URLRequest"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "loadRequest"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "loadRequest"]
+- !private ["PSo16UIStateRestoring", "RegisterLink"]
+- !private ["PSo16UIStateRestoring", "URL"]
+- !private ["PSo16UIStateRestoring", "URLRequest"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "RegisterLink"]
+- !private ["PSo18UITraitEnvironment", "URL"]
+- !private ["PSo18UITraitEnvironment", "URLRequest"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "loadRequest"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "loadRequest"]
+- ["CSo16UIViewController", "RegisterLink"]
+- ["CSo16UIViewController", "UIWebView"]
+- !private ["CSo16UIViewController", "URL"]
+- !private ["CSo16UIViewController", "URLRequest"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["CSo9UIWebView", "loadRequest"]
+- !private ["V10Foundation3URL", "init"]
+- !private ["V10Foundation10URLRequest", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "loadRequest"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "RegisterLink"]
+- !private ["Ps9_Hashable", "URL"]
+- !private ["Ps9_Hashable", "URLRequest"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "loadRequest"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "P10Foundation20ReferenceConvertible"
+- "C13NasaSpaceApps25RegisterWebViewController"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "CSo9UIWebView"
+- !private "V10Foundation3URL"
+- !private "V10Foundation10URLRequest"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/apple/Documents/NasaSpaceApps/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/paper-onboarding/paper_onboarding.framework/Modules/paper_onboarding.swiftmodule/arm64.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/ImageSlideshow/ImageSlideshow.framework/Modules/ImageSlideshow.swiftmodule/arm64.swiftmodule"
+- "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/TimelineTableViewCell/TimelineTableViewCell.framework/Modules/TimelineTableViewCell.swiftmodule/arm64.swiftmodule"
+interface-hash: "15d5c98d7119acc04e973d7d19c5a739"

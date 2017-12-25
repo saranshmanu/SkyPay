@@ -1,0 +1,11 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.42.1 clang-802.0.36)"
+options: "f28144d6a3d0bf9cdffa88202e78c285"
+build_time: [546003981, 1746000]
+inputs:
+  "/Users/apple/Documents/NasaSpaceApps/Pods/ImageSlideshow/ImageSlideshow/Classes/Core/FullScreenSlideshowViewController.swift": [545317790, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/ImageSlideshow/ImageSlideshow/Classes/Core/ImageSlideshow.swift": [545317790, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/ImageSlideshow/ImageSlideshow/Classes/Core/ImageSlideshowItem.swift": [545317790, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/ImageSlideshow/ImageSlideshow/Classes/Core/InputSource.swift": [545317790, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/ImageSlideshow/ImageSlideshow/Classes/Core/UIImage+AspectFit.swift": [545317790, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/ImageSlideshow/ImageSlideshow/Classes/Core/UIImageView+Tools.swift": [545317790, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/ImageSlideshow/ImageSlideshow/Classes/Core/ZoomAnimatedTransitioning.swift": [545317790, 0]

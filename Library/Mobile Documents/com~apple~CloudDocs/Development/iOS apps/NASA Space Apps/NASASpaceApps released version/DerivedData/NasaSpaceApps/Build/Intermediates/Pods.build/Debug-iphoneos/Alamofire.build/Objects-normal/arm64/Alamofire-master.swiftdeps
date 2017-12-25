@@ -1,0 +1,21 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.42.1 clang-802.0.36)"
+options: "0a4613069469faa10ed2081edcbe8943"
+build_time: [546003977, 789643000]
+inputs:
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/AFError.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/Alamofire.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/MultipartFormData.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/Notifications.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/ParameterEncoding.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/Request.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/Response.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/ResponseSerialization.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/Result.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/ServerTrustPolicy.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/SessionDelegate.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/SessionManager.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/TaskDelegate.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/Timeline.swift": [545005277, 0]
+  "/Users/apple/Documents/NasaSpaceApps/Pods/Alamofire/Source/Validation.swift": [545005277, 0]

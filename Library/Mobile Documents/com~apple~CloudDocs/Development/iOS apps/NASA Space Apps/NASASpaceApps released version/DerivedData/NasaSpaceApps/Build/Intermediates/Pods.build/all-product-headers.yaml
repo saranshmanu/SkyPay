@@ -1,0 +1,400 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Alamofire-Swift.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Alamofire-umbrella.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMDefines.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/GoogleToolboxForMac/GTMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMLogger.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/GoogleToolboxForMac/Foundation/GTMLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSData+zlib.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/GoogleToolboxForMac/Foundation/GTMNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-Swift.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-umbrella.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Intermediates/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/ImageSlideshow/ImageSlideshow.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ImageSlideshow-Swift.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/ImageSlideshow/ImageSlideshow.framework/Headers/ImageSlideshow-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ImageSlideshow-umbrella.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Target Support Files/ImageSlideshow/ImageSlideshow-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/ImageSlideshow/ImageSlideshow.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Intermediates/Pods.build/Debug-iphoneos/ImageSlideshow.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Pods_NasaSpaceApps.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-NasaSpaceApps-umbrella.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Target Support Files/Pods-NasaSpaceApps/Pods-NasaSpaceApps-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_NasaSpaceApps-Swift.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Pods_NasaSpaceApps.framework/Headers/Pods_NasaSpaceApps-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Pods_NasaSpaceApps.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-NasaSpaceApps.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Any.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Api.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Duration.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Empty.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "FieldMask.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBArray.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBArray.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBArray_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBArray_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBBootstrap.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBBootstrap.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBCodedInputStream.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBCodedInputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBCodedInputStream_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBCodedInputStream_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBCodedOutputStream.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBCodedOutputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBCodedOutputStream_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBCodedOutputStream_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBDescriptor.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBDescriptor.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBDescriptor_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBDescriptor_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBDictionary.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBDictionary.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBDictionary_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBDictionary_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBExtensionInternals.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBExtensionInternals.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBExtensionRegistry.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBExtensionRegistry.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBMessage.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBMessage.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBMessage_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBProtocolBuffers.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBProtocolBuffers.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBProtocolBuffers_RuntimeSupport.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBProtocolBuffers_RuntimeSupport.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBRootObject.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBRootObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBRootObject_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBRootObject_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBRuntimeTypes.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBRuntimeTypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUnknownField.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBUnknownField.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUnknownFieldSet.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBUnknownFieldSet.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUnknownFieldSet_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBUnknownFieldSet_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUnknownField_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBUnknownField_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUtilities.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBUtilities.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUtilities_PackagePrivate.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBUtilities_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBWellKnownTypes.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBWellKnownTypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBWireFormat.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/GPBWireFormat.h"
+        },
+        {
+          'type': 'file',
+          'name': "Protobuf-Swift.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Headers/Protobuf-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Protobuf-umbrella.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Target Support Files/Protobuf/Protobuf-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SourceContext.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Struct.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Timestamp.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Type.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Wrappers.pbobjc.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Intermediates/Pods.build/Debug-iphoneos/Protobuf.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/TimelineTableViewCell/TimelineTableViewCell.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TimelineTableViewCell-Swift.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/TimelineTableViewCell/TimelineTableViewCell.framework/Headers/TimelineTableViewCell-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TimelineTableViewCell-umbrella.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Target Support Files/TimelineTableViewCell/TimelineTableViewCell-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/TimelineTableViewCell/TimelineTableViewCell.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Intermediates/Pods.build/Debug-iphoneos/TimelineTableViewCell.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/paper-onboarding/paper_onboarding.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "paper-onboarding-umbrella.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/Pods/Target Support Files/paper-onboarding/paper-onboarding-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "paper_onboarding-Swift.h",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/paper-onboarding/paper_onboarding.framework/Headers/paper_onboarding-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Products/Debug-iphoneos/paper-onboarding/paper_onboarding.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/apple/Documents/NasaSpaceApps/DerivedData/NasaSpaceApps/Build/Intermediates/Pods.build/Debug-iphoneos/paper-onboarding.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
