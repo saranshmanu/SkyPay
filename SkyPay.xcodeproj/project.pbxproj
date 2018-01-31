@@ -15,10 +15,10 @@
 		952B2C941EDB38DD001C8D50 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 952B2C911EDB3862001C8D50 /* SF-UI-Display-Thin.otf */; };
 		953451601EF4793500C17C59 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534515F1EF4793500C17C59 /* StartPageViewController.swift */; };
 		954B46731EC3600600DDC7FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B46721EC3600600DDC7FA /* AppDelegate.swift */; };
-		954B46781EC3600600DDC7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954B46761EC3600600DDC7FA /* Main.storyboard */; };
 		954B467B1EC3600600DDC7FA /* SkyPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */; };
-		954B46801EC3600600DDC7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954B467E1EC3600600DDC7FA /* LaunchScreen.storyboard */; };
 		95546CF31F12B82700295A4C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95546CF11F12B80F00295A4C /* SWRevealViewController.m */; };
+		955B90712021BE1900939FFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955B906F2021BE1900939FFF /* Main.storyboard */; };
+		955B90732021BEAE00939FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955B90722021BEAE00939FFF /* LaunchScreen.storyboard */; };
 		958072591EEC916F002F7AAC /* ExchangeRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */; };
 		9580725B1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */; };
 		958784E41EDDCEC30088E51F /* DidotHTFB11Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 958784E31EDDCEB70088E51F /* DidotHTFB11Bold.ttf */; };
@@ -51,12 +51,12 @@
 		9534515F1EF4793500C17C59 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		954B466F1EC3600600DDC7FA /* SkyPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954B46721EC3600600DDC7FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		954B46771EC3600600DDC7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		954B467A1EC3600600DDC7FA /* SkyPay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkyPay.xcdatamodel; sourceTree = "<group>"; };
-		954B467F1EC3600600DDC7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		954B46811EC3600600DDC7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95546CF11F12B80F00295A4C /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		95546CF21F12B80F00295A4C /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		955B906F2021BE1900939FFF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		955B90722021BEAE00939FFF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewController.swift; sourceTree = "<group>"; };
 		9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateTableViewCell.swift; sourceTree = "<group>"; };
 		958072621EEDA8D9002F7AAC /* SkyPay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyPay-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 				959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */,
 				959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */,
 				959755B11EF502BF003E1F26 /* Constants.swift */,
-				954B467E1EC3600600DDC7FA /* LaunchScreen.storyboard */,
-				954B46761EC3600600DDC7FA /* Main.storyboard */,
+				955B90722021BEAE00939FFF /* LaunchScreen.storyboard */,
+				955B906F2021BE1900939FFF /* Main.storyboard */,
 				952B2C8B1EDB1EAA001C8D50 /* GoogleService-Info.plist */,
 				954B46811EC3600600DDC7FA /* Info.plist */,
 				954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */,
@@ -260,13 +260,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				952B2C921EDB38DD001C8D50 /* SF-UI-Display-Medium.otf in Resources */,
+				955B90732021BEAE00939FFF /* LaunchScreen.storyboard in Resources */,
 				952B2C931EDB38DD001C8D50 /* SF-UI-Display-Regular.otf in Resources */,
 				952B2C941EDB38DD001C8D50 /* SF-UI-Display-Thin.otf in Resources */,
-				954B46801EC3600600DDC7FA /* LaunchScreen.storyboard in Resources */,
+				955B90712021BE1900939FFF /* Main.storyboard in Resources */,
 				958784E41EDDCEC30088E51F /* DidotHTFB11Bold.ttf in Resources */,
 				952B2C8C1EDB1EAA001C8D50 /* GoogleService-Info.plist in Resources */,
 				95B4D7831EC3738D00CB0F6F /* Assets.xcassets in Resources */,
-				954B46781EC3600600DDC7FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,25 +352,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		954B46761EC3600600DDC7FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				954B46771EC3600600DDC7FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		954B467E1EC3600600DDC7FA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				954B467F1EC3600600DDC7FA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		954B46821EC3600600DDC7FA /* Debug */ = {
