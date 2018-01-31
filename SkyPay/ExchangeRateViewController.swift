@@ -55,14 +55,17 @@ class ExchangeRateViewController: UIViewController, UITableViewDelegate, UITable
         ExchangeRateTableView.delegate = self
         ExchangeRateTableView.dataSource = self
         //CountryFlagImageView.image = UIImage.init(named: "INR")
-//        Alamofire.request(url).responseJSON{
-//            response in print(response.result.value!)
-//            if response.result.isSuccess{
-//                self.exchangeRates = response.result.value! as! [NSDictionary]
-//                print(self.exchangeRates)
-//                self.ExchangeRateTableView.reloadData()
-//            }
-//        }
+        
+        Alamofire.request("https://bitpay.com/api/rates/").responseJSON{
+            response in print(response.result.value!)
+            if response.result.isSuccess{
+                self.exchangeRates = response.result.value! as! [NSDictionary]
+                print(self.exchangeRates)
+                self.ExchangeRateTableView.reloadData()
+            }
+        }
+        
+        
         for i in 0...countries.count-1{
             Alamofire.request(url + countries[i]).responseJSON{
                 response in //print(response.result.value!)
