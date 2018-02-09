@@ -39,14 +39,15 @@
 		95B4D7831EC3738D00CB0F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B4D7821EC3738D00CB0F6F /* Assets.xcassets */; };
 		95BB05821EF5B78A00223C88 /* RippleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB05811EF5B78A00223C88 /* RippleEffect.swift */; };
 		95D23A2C1EF6F2DF00F256F2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */; };
+		95F0175A202DBAAA002B4660 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F01759202DBAAA002B4660 /* NetworkEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		761B2BB808D25716E92BFADA /* Pods-SkyPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyPay/Pods-SkyPay.debug.xcconfig"; sourceTree = "<group>"; };
 		952B2C891EDB1A71001C8D50 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		952B2C8B1EDB1EAA001C8D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		952B2C8F1EDB3862001C8D50 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
-		952B2C901EDB3862001C8D50 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		952B2C8F1EDB3862001C8D50 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		952B2C901EDB3862001C8D50 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
 		952B2C911EDB3862001C8D50 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
 		9534515F1EF4793500C17C59 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		954B466F1EC3600600DDC7FA /* SkyPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +79,7 @@
 		95BB05811EF5B78A00223C88 /* RippleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
 		95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		95EDD58E1F03D58B002AADC4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		95F01759202DBAAA002B4660 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 		BA06760B3901502A1CA72006 /* Pods_SkyPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF71008EC60809AB3177F88A /* Pods-SkyPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyPay/Pods-SkyPay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 				954B46811EC3600600DDC7FA /* Info.plist */,
 				954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */,
 				958784E21EDDC54E0088E51F /* Fonts */,
+				95F01759202DBAAA002B4660 /* NetworkEngine.swift */,
 			);
 			path = SkyPay;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				95907D601F12AC440070C7A5 /* ToggleTorchButton.swift in Sources */,
 				9580725B1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift in Sources */,
 				959755B41EF54628003E1F26 /* TransactionHistoryTableViewCell.swift in Sources */,
+				95F0175A202DBAAA002B4660 /* NetworkEngine.swift in Sources */,
 				95907D5A1F12AC440070C7A5 /* QRCodeReaderViewContainer.swift in Sources */,
 				95907D571F12AC3D0070C7A5 /* QRCodeReader.swift in Sources */,
 				95907D5D1F12AC440070C7A5 /* QRCodeReaderViewControllerDelegate.swift in Sources */,

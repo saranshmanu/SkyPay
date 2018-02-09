@@ -40,7 +40,6 @@ class sendBitcoinViewController: UIViewController, QRCodeReaderViewControllerDel
     }
     
     func paymentSuccess() {
-        
         paymentStatus.isHidden = false
         checkMark.isHidden = false
         paymentStatus.text = "SUCCESS"
