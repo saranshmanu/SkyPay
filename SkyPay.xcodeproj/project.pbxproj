@@ -15,7 +15,6 @@
 		952B2C941EDB38DD001C8D50 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 952B2C911EDB3862001C8D50 /* SF-UI-Display-Thin.otf */; };
 		953451601EF4793500C17C59 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534515F1EF4793500C17C59 /* StartPageViewController.swift */; };
 		954B46731EC3600600DDC7FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B46721EC3600600DDC7FA /* AppDelegate.swift */; };
-		954B467B1EC3600600DDC7FA /* SkyPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */; };
 		95546CF31F12B82700295A4C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95546CF11F12B80F00295A4C /* SWRevealViewController.m */; };
 		955B90712021BE1900939FFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955B906F2021BE1900939FFF /* Main.storyboard */; };
 		955B90732021BEAE00939FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955B90722021BEAE00939FFF /* LaunchScreen.storyboard */; };
@@ -40,6 +39,7 @@
 		95BB05821EF5B78A00223C88 /* RippleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB05811EF5B78A00223C88 /* RippleEffect.swift */; };
 		95D23A2C1EF6F2DF00F256F2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */; };
 		95F0175A202DBAAA002B4660 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F01759202DBAAA002B4660 /* NetworkEngine.swift */; };
+		95F0179A2031EB26002B4660 /* utlis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F017992031EB26002B4660 /* utlis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,6 @@
 		9534515F1EF4793500C17C59 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		954B466F1EC3600600DDC7FA /* SkyPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954B46721EC3600600DDC7FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		954B467A1EC3600600DDC7FA /* SkyPay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkyPay.xcdatamodel; sourceTree = "<group>"; };
 		954B46811EC3600600DDC7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95546CF11F12B80F00295A4C /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		95546CF21F12B80F00295A4C /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		95EDD58E1F03D58B002AADC4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		95F01759202DBAAA002B4660 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		95F017992031EB26002B4660 /* utlis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utlis.swift; sourceTree = "<group>"; };
 		BA06760B3901502A1CA72006 /* Pods_SkyPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF71008EC60809AB3177F88A /* Pods-SkyPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyPay/Pods-SkyPay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,27 +126,13 @@
 		954B46711EC3600600DDC7FA /* SkyPay */ = {
 			isa = PBXGroup;
 			children = (
-				95907D441F12AC120070C7A5 /* QR reader */,
-				958072611EEDA890002F7AAC /* SWRevealViewController */,
-				95B4D7821EC3738D00CB0F6F /* Assets.xcassets */,
-				954B46721EC3600600DDC7FA /* AppDelegate.swift */,
-				952B2C891EDB1A71001C8D50 /* LoginViewController.swift */,
-				95EDD58E1F03D58B002AADC4 /* SignupViewController.swift */,
-				958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */,
-				9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */,
-				95BB05811EF5B78A00223C88 /* RippleEffect.swift */,
-				95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */,
-				9534515F1EF4793500C17C59 /* StartPageViewController.swift */,
-				959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */,
-				959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */,
+				95F0179B2031F2DA002B4660 /* helpers */,
+				95F0179D2031F346002B4660 /* Storyboards */,
+				95F0179C2031F336002B4660 /* viewController */,
 				959755B11EF502BF003E1F26 /* Constants.swift */,
-				955B90722021BEAE00939FFF /* LaunchScreen.storyboard */,
-				955B906F2021BE1900939FFF /* Main.storyboard */,
-				952B2C8B1EDB1EAA001C8D50 /* GoogleService-Info.plist */,
-				954B46811EC3600600DDC7FA /* Info.plist */,
-				954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */,
-				958784E21EDDC54E0088E51F /* Fonts */,
 				95F01759202DBAAA002B4660 /* NetworkEngine.swift */,
+				95F017992031EB26002B4660 /* utlis.swift */,
+				95B4D7821EC3738D00CB0F6F /* Assets.xcassets */,
 			);
 			path = SkyPay;
 			sourceTree = "<group>";
@@ -171,6 +157,7 @@
 				952B2C911EDB3862001C8D50 /* SF-UI-Display-Thin.otf */,
 			);
 			name = Fonts;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		95907D441F12AC120070C7A5 /* QR reader */ = {
@@ -188,6 +175,44 @@
 				95907D551F12AC120070C7A5 /* ToggleTorchButton.swift */,
 			);
 			path = "QR reader";
+			sourceTree = "<group>";
+		};
+		95F0179B2031F2DA002B4660 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				958784E21EDDC54E0088E51F /* Fonts */,
+				958072611EEDA890002F7AAC /* SWRevealViewController */,
+				95907D441F12AC120070C7A5 /* QR reader */,
+				9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */,
+				959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */,
+				95BB05811EF5B78A00223C88 /* RippleEffect.swift */,
+				954B46721EC3600600DDC7FA /* AppDelegate.swift */,
+				952B2C8B1EDB1EAA001C8D50 /* GoogleService-Info.plist */,
+				954B46811EC3600600DDC7FA /* Info.plist */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		95F0179C2031F336002B4660 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				952B2C891EDB1A71001C8D50 /* LoginViewController.swift */,
+				95EDD58E1F03D58B002AADC4 /* SignupViewController.swift */,
+				958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */,
+				95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */,
+				9534515F1EF4793500C17C59 /* StartPageViewController.swift */,
+				959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		95F0179D2031F346002B4660 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				955B90722021BEAE00939FFF /* LaunchScreen.storyboard */,
+				955B906F2021BE1900939FFF /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		9E27DC0CE4930A6F1E7A1154 /* Frameworks */ = {
@@ -334,7 +359,6 @@
 				95546CF31F12B82700295A4C /* SWRevealViewController.m in Sources */,
 				958072591EEC916F002F7AAC /* ExchangeRateViewController.swift in Sources */,
 				959755B21EF502BF003E1F26 /* Constants.swift in Sources */,
-				954B467B1EC3600600DDC7FA /* SkyPay.xcdatamodeld in Sources */,
 				953451601EF4793500C17C59 /* StartPageViewController.swift in Sources */,
 				95AA3F191F03D75800286581 /* SignupViewController.swift in Sources */,
 				95D23A2C1EF6F2DF00F256F2 /* ProfileViewController.swift in Sources */,
@@ -350,6 +374,7 @@
 				95907D591F12AC440070C7A5 /* QRCodeReaderView.swift in Sources */,
 				95907D5E1F12AC440070C7A5 /* ReaderOverlayView.swift in Sources */,
 				954B46731EC3600600DDC7FA /* AppDelegate.swift in Sources */,
+				95F0179A2031EB26002B4660 /* utlis.swift in Sources */,
 				95907D5F1F12AC440070C7A5 /* SwitchCameraButton.swift in Sources */,
 				95BB05821EF5B78A00223C88 /* RippleEffect.swift in Sources */,
 			);
@@ -504,19 +529,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		954B46791EC3600600DDC7FA /* SkyPay.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				954B467A1EC3600600DDC7FA /* SkyPay.xcdatamodel */,
-			);
-			currentVersion = 954B467A1EC3600600DDC7FA /* SkyPay.xcdatamodel */;
-			path = SkyPay.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 954B46671EC3600600DDC7FA /* Project object */;
 }
