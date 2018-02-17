@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5115FA36231795E4EC3296886303B33B'
+               BlueprintIdentifier = 'F6811DBEE8320CB9B29E58D791E87398'
                BlueprintName = 'WVCheckMark'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'WVCheckMark.framework'>

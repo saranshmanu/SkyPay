@@ -59,8 +59,8 @@
 		955B90722021BEAE00939FFF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		958072581EEC916F002F7AAC /* ExchangeRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewController.swift; sourceTree = "<group>"; };
 		9580725A1EEC9191002F7AAC /* ExchangeRateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateTableViewCell.swift; sourceTree = "<group>"; };
-		958072621EEDA8D9002F7AAC /* SkyPay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyPay-Bridging-Header.h"; sourceTree = "<group>"; };
 		958784E31EDDCEB70088E51F /* DidotHTFB11Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DidotHTFB11Bold.ttf; sourceTree = "<group>"; };
+		958D36D72038199600DEA6A8 /* SpyPay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpyPay-Bridging-Header.h"; sourceTree = "<group>"; };
 		95907D4C1F12AC120070C7A5 /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		95907D4D1F12AC120070C7A5 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
 		95907D4E1F12AC120070C7A5 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		959755B11EF502BF003E1F26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		959755B31EF54628003E1F26 /* TransactionHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		959755B51EF553DA003E1F26 /* sendBitcoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendBitcoinViewController.swift; sourceTree = "<group>"; };
-		95B4D7821EC3738D00CB0F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95B4D7821EC3738D00CB0F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SkyPay/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		95BB05811EF5B78A00223C88 /* RippleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffect.swift; sourceTree = "<group>"; };
 		95D23A2B1EF6F2DF00F256F2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		95EDD58E1F03D58B002AADC4 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +126,8 @@
 		954B46711EC3600600DDC7FA /* SkyPay */ = {
 			isa = PBXGroup;
 			children = (
+				958D36D72038199600DEA6A8 /* SpyPay-Bridging-Header.h */,
+				954B46811EC3600600DDC7FA /* Info.plist */,
 				95F0179B2031F2DA002B4660 /* helpers */,
 				95F0179D2031F346002B4660 /* Storyboards */,
 				95F0179C2031F336002B4660 /* viewController */,
@@ -142,7 +144,6 @@
 			children = (
 				95546CF21F12B80F00295A4C /* SWRevealViewController.h */,
 				95546CF11F12B80F00295A4C /* SWRevealViewController.m */,
-				958072621EEDA8D9002F7AAC /* SkyPay-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
 			path = "New Group";
@@ -188,7 +189,6 @@
 				95BB05811EF5B78A00223C88 /* RippleEffect.swift */,
 				954B46721EC3600600DDC7FA /* AppDelegate.swift */,
 				952B2C8B1EDB1EAA001C8D50 /* GoogleService-Info.plist */,
-				954B46811EC3600600DDC7FA /* Info.plist */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -307,9 +307,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SkyPay/Pods-SkyPay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/WVCheckMark/WVCheckMark.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WVCheckMark.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -337,13 +350,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyPay-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -485,7 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyblue.SkyPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SkyPay/New Group/SkyPay-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyPay/SpyPay-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -502,7 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skyblue.SkyPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SkyPay/New Group/SkyPay-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkyPay/SpyPay-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

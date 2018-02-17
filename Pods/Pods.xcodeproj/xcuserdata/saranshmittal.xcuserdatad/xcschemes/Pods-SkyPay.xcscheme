@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "757C0F2A06C437C74F47C6FD6C183E4C"
+               BlueprintIdentifier = "82FA91F94E054829C0BCC16DF5A8D7DD"
                BuildableName = "Pods_SkyPay.framework"
                BlueprintName = "Pods-SkyPay"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "757C0F2A06C437C74F47C6FD6C183E4C"
+            BlueprintIdentifier = "82FA91F94E054829C0BCC16DF5A8D7DD"
             BuildableName = "Pods_SkyPay.framework"
             BlueprintName = "Pods-SkyPay"
             ReferencedContainer = "container:Pods.xcodeproj">

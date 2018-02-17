@@ -7,6 +7,7 @@ target 'SkyPay' do
 
   # Pods for SkyPay
 pod 'Alamofire', '~> 4.4'
+pod 'PromiseKit/Alamofire'
 pod 'Firebase'
 #pod 'Firebase/AdMob'
 #pod 'Firebase/Analytics'
