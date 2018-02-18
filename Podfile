@@ -6,7 +6,7 @@ target 'SkyPay' do
   use_frameworks!
 
   # Pods for SkyPay
-pod 'Alamofire', '~> 4.4'
+pod 'Alamofire'
 pod 'PromiseKit/Alamofire'
 pod 'Firebase'
 #pod 'Firebase/AdMob'

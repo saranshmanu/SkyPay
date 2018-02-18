@@ -13,9 +13,11 @@ import PromiseKit
 class Constants {
     public static let BASE_URL = "https://api.blockcypher.com/v1/btc/main"
     public static let TOKEN = "ce6a007f303a458bb0c73aa8d892f081"
-    public static func networkCall(url:String, method:HTTPMethod)->Promise<NSDictionary>{
+    public static func networkCall(url:String, method:HTTPMethod, params:NSDictionary = [:], header:NSDictionary = [:])->Promise<NSDictionary>{
         return Promise{success,failure in
-            Alamofire.request(url, method:method).responseJSON{
+            let x = params as! [String:Any]
+            let y = header as! [String:Any]
+            Alamofire.request(url, method:method, parameters:x).responseJSON{
                 response in
                 if response.result.isSuccess{
                     success(response.result.value as! NSDictionary)
@@ -65,6 +67,45 @@ class networkEngine {
         public static func generateAddress()->Promise<NSDictionary>{
             let url = Constants.BASE_URL + "/addrs"
             return Constants.networkCall(url: url, method: .post)
+        }
+    }
+    class WalletAPI {
+        // information on a public address
+        func createWallet(NAME_OF_THE_WALLET:String, ADDRESSES:[String])->Promise<NSDictionary>{
+            let url = Constants.BASE_URL + "/wallets" + "?token=" + Constants.TOKEN
+            let params = [
+                "name":NAME_OF_THE_WALLET,
+                "addresses":ADDRESSES
+                ] as NSDictionary
+            return Constants.networkCall(url: url, method: .post, params: params)
+        }
+        // list all the wallets from the token
+        func listWallets()->Promise<NSDictionary>{
+            let url = Constants.BASE_URL + "/wallets" + "?token=" + Constants.TOKEN
+            return Constants.networkCall(url: url, method: .get)
+        }
+        // get addresses and all the information about a wallet from a wallet name
+        func getWalletAddressesFromName(NAME_OF_THE_WALLET:String)->Promise<NSDictionary>{
+            let url = Constants.BASE_URL + "/wallets/" + NAME_OF_THE_WALLET + "/addresses?token=" + Constants.TOKEN
+            return Constants.networkCall(url: url, method: .get)
+        }
+        // add an address from the wallet with name
+        func addAddressesToWallet(NAME_OF_THE_WALLET:String, ADDRESSES:[String])->Promise<NSDictionary>{
+            let url = Constants.BASE_URL + "/wallets/" + NAME_OF_THE_WALLET + "/addresses?token=" + Constants.TOKEN
+            let params = [
+                "addresses":ADDRESSES
+                ] as NSDictionary
+            return Constants.networkCall(url: url, method: .post, params: params)
+        }
+        // delete an address from the wallet with name
+        func deleteAddressFromWallet(NAME_OF_THE_WALLET:String, ADDRESS:String)->Promise<NSDictionary>{
+            let url = Constants.BASE_URL + "/wallets/" + NAME_OF_THE_WALLET + "/addresses?token=" + Constants.TOKEN + "&address=" + ADDRESS
+            return Constants.networkCall(url: url, method: .delete)
+        }
+        // delete all the wallets with token
+        func deleteWallet(NAME_OF_THE_WALLET:String)->Promise<NSDictionary>{
+            let url = Constants.BASE_URL + "/wallets/" + NAME_OF_THE_WALLET + "/addresses?token=" + Constants.TOKEN
+            return Constants.networkCall(url: url, method: .delete)
         }
     }
 }
