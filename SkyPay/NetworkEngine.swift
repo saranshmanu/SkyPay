@@ -108,7 +108,43 @@ class networkEngine {
             return Constants.networkCall(url: url, method: .delete)
         }
     }
+    class TransactionAPI {
+        // information on a public address
+        func newTransaction(SENDER_ADDRESS:[String], RECEIVER_ADDRESS:[String], AMOUNT:Int)->Promise<NSDictionary>{
+            let url = Constants.BASE_URL + "/txs/new"
+            let x = [
+                "addresses":SENDER_ADDRESS
+                ] as [String:Any]
+            let y = [
+                "addresses":RECEIVER_ADDRESS,
+                "value":AMOUNT
+                ] as [String : Any]
+            let params = [
+                "inputs":[x],
+                "outputs":[y]
+                ] as NSDictionary
+            return Constants.networkCall(url: url, method: .post, params: params)
+        }
+        func sendTransaction(TO_SIGN:String, SIGNATURE_OF_THE_TRANSACTION:String, PUB_KEYS:String, TX_BODY:NSDictionary)->Promise<NSDictionary>{
+            let url = Constants.BASE_URL + "/txs/send"
+            let params = [
+                "tx":TX_BODY,
+                "tosign":[TO_SIGN],
+                "signatures":[SIGNATURE_OF_THE_TRANSACTION],
+                "pubkeys":[PUB_KEYS]
+                ] as NSDictionary
+            return Constants.networkCall(url: url, method: .post, params: params)
+        }
+    }
+    class microTransactionAPI {
+        // information on a public address
+    }
 }
+
+//// calling the new endpoint, same as above
+//$.post('https://api.blockcypher.com/v1/bcy/test/txs/new', JSON.stringify(newtx))
+//    .then(function(tmptx) {
+
 
 //private static func c(completionHandler:@escaping (Bool) -> ()) {
 //    completionHandler(false)
